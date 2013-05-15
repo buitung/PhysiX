@@ -4,6 +4,7 @@
  */
 package UI.Panel;
 
+import UI.MainUI;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,7 +19,9 @@ public class Geo extends javax.swing.JPanel {
     /**
      * Creates new form Geo
      */
-    public Geo() {
+    private MainUI mainUI;
+    public Geo(MainUI mainUI) {
+        this.mainUI = mainUI;
         initComponents();
     }
 

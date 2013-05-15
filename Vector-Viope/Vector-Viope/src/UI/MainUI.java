@@ -39,9 +39,9 @@ public final class MainUI extends JFrame {
 
     public void addToContentPane() {
         setTitle("Front Page");
-        FrontPage frontP = new FrontPage();
-        Geo geoP = new Geo();
-        Trig trigP = new Trig();
+        FrontPage frontP = new FrontPage(this);
+        Geo geoP = new Geo(this);
+        Trig trigP = new Trig(this);
         JPanel cards = new JPanel(new CardLayout());
         cards.add(frontP,"Front Page");
         cards.add(geoP,"Geo Page");
