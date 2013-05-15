@@ -8,6 +8,7 @@ import UI.MainUI;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
@@ -20,6 +21,7 @@ public class Trig extends javax.swing.JPanel {
      * Creates new form Trig
      */
     private MainUI mainUI;
+
     public Trig(MainUI mainUI) {
         this.mainUI = mainUI;
         initComponents();
@@ -51,10 +53,20 @@ public class Trig extends javax.swing.JPanel {
 
         jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton1.setText("Angle Calculation");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton2.setText("Side Calculation");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
 
         jButton4.setText("Back");
@@ -86,6 +98,30 @@ public class Trig extends javax.swing.JPanel {
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Angle Calculation");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new AngleCalculation());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Side calculation");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new SideCalculation());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;

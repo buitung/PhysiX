@@ -148,7 +148,7 @@ public class FrontPage extends javax.swing.JPanel {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-                JFrame fr = new JFrame();
+        JFrame fr = new JFrame();
         fr.setTitle("Projectile");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         fr.setContentPane(new Projectile());
