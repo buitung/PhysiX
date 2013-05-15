@@ -4,6 +4,10 @@
  */
 package UI;
 
+import UI.Panel.FrontPage;
+import UI.Panel.Geo;
+import UI.Panel.Trig;
+import java.awt.CardLayout;
 import java.awt.SplashScreen;
 import javax.swing.*;
 
@@ -15,7 +19,7 @@ public final class MainUI extends JFrame {
 
     public MainUI() {
         setSplashScreen();
-        setSize(300, 300);
+        setSize(557, 577);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -34,6 +38,21 @@ public final class MainUI extends JFrame {
     }
 
     public void addToContentPane() {
+        setTitle("Front Page");
+        FrontPage frontP = new FrontPage();
+        Geo geoP = new Geo();
+        Trig trigP = new Trig();
+        JPanel cards = new JPanel(new CardLayout());
+        cards.add(frontP,"Front Page");
+        cards.add(geoP,"Geo Page");
+        cards.add(trigP,"Trig Page");
+        frontP.setActionToPerform(cards);
+        geoP.setActionToPerform(cards);
+        trigP.setActionToPerform(cards);
+        //cards.add(cards)
+        add(cards);
+        pack();
+        
     }
 
     public static void main(String[] args) {
