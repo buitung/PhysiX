@@ -108,12 +108,6 @@ public class VectorAdd extends javax.swing.JPanel {
 
         jButton2.setText("Information");
 
-        jLabel15.setText("a");
-
-        jLabel16.setText("b");
-
-        jLabel17.setText("c");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(

@@ -268,19 +268,10 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel15">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="a"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel16">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="b"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel17">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="c"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

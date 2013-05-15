@@ -65,8 +65,6 @@ public class VectorSubtract extends javax.swing.JPanel {
 
         jLabel3.setText("Vector 1");
 
-        jLabel15.setText("a");
-
         jTextField1.setText("  ");
 
         jLabel4.setText(" i + ");
@@ -91,13 +89,9 @@ public class VectorSubtract extends javax.swing.JPanel {
 
         jLabel12.setText(" i + ");
 
-        jLabel16.setText("b");
-
         jLabel11.setText("Subtraction");
 
         jLabel10.setText(" k");
-
-        jLabel17.setText("c");
 
         jTextField6.setText("  ");
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
@@ -152,30 +146,32 @@ public class VectorSubtract extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel12)
-                                .addGap(40, 40, 40)
-                                .addComponent(jLabel16)
-                                .addGap(12, 12, 12)
-                                .addComponent(jLabel13)
-                                .addGap(41, 41, 41)
-                                .addComponent(jLabel17)
-                                .addGap(12, 12, 12)
-                                .addComponent(jLabel14))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel12))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel7)
                                 .addGap(18, 18, 18)
                                 .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel8)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel10)))
+                                .addComponent(jLabel10))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel16)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel13)
+                                .addGap(47, 47, 47)
+                                .addComponent(jLabel17)
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel14)))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
