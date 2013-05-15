@@ -46,28 +46,28 @@ public class Vector extends javax.swing.JPanel {
 
         jPanel1.setLayout(new java.awt.GridLayout(4, 2));
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Info");
         jPanel1.add(jButton1);
 
-        jButton2.setText("jButton2");
+        jButton2.setText("Add");
         jPanel1.add(jButton2);
 
-        jButton5.setText("jButton5");
+        jButton5.setText("Subtract");
         jPanel1.add(jButton5);
 
-        jButton3.setText("jButton3");
+        jButton3.setText("Multiply");
         jPanel1.add(jButton3);
 
-        jButton4.setText("jButton4");
+        jButton4.setText("Cross product");
         jPanel1.add(jButton4);
 
-        jButton6.setText("jButton6");
+        jButton6.setText("Dot product");
         jPanel1.add(jButton6);
 
-        jButton7.setText("jButton7");
+        jButton7.setText("Angle");
         jPanel1.add(jButton7);
 
-        jButton8.setText("jButton8");
+        jButton8.setText("Distance");
         jPanel1.add(jButton8);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
