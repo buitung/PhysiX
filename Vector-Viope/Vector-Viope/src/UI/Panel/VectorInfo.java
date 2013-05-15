@@ -90,10 +90,6 @@ public class VectorInfo extends javax.swing.JPanel {
 
         jLabel15.setText(" i + ");
 
-        jLabel16.setText("b");
-
-        jLabel18.setText("a");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(

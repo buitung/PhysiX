@@ -83,17 +83,11 @@ public class VectorMultiplication extends javax.swing.JPanel {
 
         jLabel11.setText("Multiplier");
 
-        jLabel17.setText("c");
-
         jLabel15.setText(" i + ");
-
-        jLabel16.setText("b");
 
         jLabel13.setText(" j + ");
 
         jLabel14.setText(" k");
-
-        jLabel18.setText("a");
 
         jTextField4.setText("   ");
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
