@@ -4,9 +4,11 @@
  */
 package UI.Panel;
 
+import UI.MainUI;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
@@ -18,8 +20,11 @@ public class FrontPage extends javax.swing.JPanel {
     /**
      * Creates new form FrontPage
      */
-    public FrontPage() {
+    private MainUI mainUI; 
+    public FrontPage(MainUI mainUI) {
+        this.mainUI = mainUI;
         initComponents();
+        
     }
 
     /**
@@ -57,7 +62,7 @@ public class FrontPage extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 116, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -77,6 +82,11 @@ public class FrontPage extends javax.swing.JPanel {
         jPanel2.add(jButton1);
 
         jButton2.setText("Vector");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton2);
 
         jButton3.setText("Trigonometry");
@@ -119,6 +129,17 @@ public class FrontPage extends javax.swing.JPanel {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Vector");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Vector());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;
