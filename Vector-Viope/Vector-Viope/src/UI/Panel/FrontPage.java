@@ -93,6 +93,11 @@ public class FrontPage extends javax.swing.JPanel {
         jPanel2.add(jButton3);
 
         jButton4.setText("Projectile");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton4);
 
         jButton5.setText("Quit");
@@ -140,6 +145,18 @@ public class FrontPage extends javax.swing.JPanel {
         fr.pack();
         fr.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+                JFrame fr = new JFrame();
+        fr.setTitle("Projectile");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Projectile());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;

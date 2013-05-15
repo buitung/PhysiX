@@ -8,6 +8,7 @@ import UI.MainUI;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
@@ -20,6 +21,7 @@ public class Geo extends javax.swing.JPanel {
      * Creates new form Geo
      */
     private MainUI mainUI;
+
     public Geo(MainUI mainUI) {
         this.mainUI = mainUI;
         initComponents();
@@ -56,26 +58,56 @@ public class Geo extends javax.swing.JPanel {
 
         jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton1.setText("Triangle");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1);
 
         jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Brick");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
 
         jButton3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton3.setText("Quad");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3);
 
         jButton4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton4.setText("Sphere");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton4);
 
         jButton5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton5.setText("Circle");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton5);
 
         jButton6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton6.setText("Pyramid");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton6);
 
         jPanel2.setLayout(new java.awt.GridLayout(1, 1));
@@ -113,6 +145,78 @@ public class Geo extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Triangle");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Triangle());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Brick");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Brick());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Quad");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Quad());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Sphere");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Sphere());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Circle");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Circle());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Pyramid");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Pyramid());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton6ActionPerformed
+
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;
         jButton8.addActionListener(new ActionListener() {
@@ -123,8 +227,6 @@ public class Geo extends javax.swing.JPanel {
             }
         });
     }
-
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
