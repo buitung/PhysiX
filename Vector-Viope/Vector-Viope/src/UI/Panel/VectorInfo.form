@@ -228,8 +228,14 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel16">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="b"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel18">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="a"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

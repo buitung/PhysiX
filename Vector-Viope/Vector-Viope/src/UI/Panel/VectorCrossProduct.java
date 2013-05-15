@@ -100,11 +100,17 @@ public class VectorCrossProduct extends javax.swing.JPanel {
 
         jLabel8.setText(" i + ");
 
+        jLabel15.setText("a");
+
         jLabel14.setText(" k");
 
         jLabel12.setText(" i + ");
 
+        jLabel16.setText("b");
+
         jLabel11.setText("Sum");
+
+        jLabel17.setText("c");
 
         jLabel13.setText(" j + ");
 
