@@ -51,7 +51,8 @@ public class MathUtils {
         return (float)Math.atan(a/b);
     }
 
-    // public static void main(String[] args){
-    //     System.out.println(Rag2Deg(CosAngle((float) Math.sqrt(2),2)));
-    // }
+//    public static void main(String[] args){
+//         System.out.println(Rag2Deg(CosAngle((float) Math.sqrt(2),2)));
+//         System.out.println(AdjacentSide(Deg2Rad((float)30), Pythagore2D((float)2.5,(float)5)));
+//    }
 }

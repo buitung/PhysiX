@@ -71,5 +71,17 @@ public class Vector {
     public float DistanceVec(Vector vecNew) {
         return MathUtils.Pythagore3D(this.x-vecNew.x,this.y-vecNew.y,this.z-vecNew.z);
     }
+
+    public float getX() {
+        return x;
+    }
+
+    public float getY() {
+        return y;
+    }
+
+    public float getZ() {
+        return z;
+    }
 }
 
