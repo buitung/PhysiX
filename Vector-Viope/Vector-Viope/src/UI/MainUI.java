@@ -19,18 +19,18 @@ public final class MainUI extends JFrame {
 
     public MainUI() {
         setSplashScreen();
-        setSize(557, 577);
-        setVisible(true);
+        addToContentPane();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        addToContentPane();
+        pack();
+        setVisible(true);
     }
 
     public void setSplashScreen() {
         final SplashScreen splash = SplashScreen.getSplashScreen();
         if (splash != null) {
             try {
-                Thread.sleep(1500);             // wait a second
+                Thread.sleep(1000);             // wait a second
             } catch (InterruptedException ex) {
             }
             splash.close();
@@ -43,16 +43,16 @@ public final class MainUI extends JFrame {
         Geo geoP = new Geo(this);
         Trig trigP = new Trig(this);
         JPanel cards = new JPanel(new CardLayout());
-        cards.add(frontP,"Front Page");
-        cards.add(geoP,"Geo Page");
-        cards.add(trigP,"Trig Page");
+        cards.add(frontP, "Front Page");
+        cards.add(geoP, "Geo Page");
+        cards.add(trigP, "Trig Page");
         frontP.setActionToPerform(cards);
         geoP.setActionToPerform(cards);
         trigP.setActionToPerform(cards);
         //cards.add(cards)
         add(cards);
         pack();
-        
+
     }
 
     public static void main(String[] args) {
