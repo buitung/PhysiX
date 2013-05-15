@@ -195,8 +195,14 @@ public class Brick extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        PhysixLib.Brick br = new PhysixLib.Brick(Float.parseFloat(jTextField1.getText().toString()), 
+                Float.parseFloat(jTextField2.getText().toString()), 
+                Float.parseFloat(jTextField3.getText().toString()));
+        jLabel11.setText(Float.toString(br.Area()));
+        jLabel12.setText(Float.toString(br.Volume()));
 
+
+    }//GEN-LAST:event_jButton1ActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

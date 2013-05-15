@@ -20,7 +20,7 @@ public class Circle {
         return MathUtils.PI * radius * radius;
     }
     
-    public float Circonference(){
+    public float Circumference(){
         return 2 * MathUtils.PI * radius;
     }
 }
