@@ -6,14 +6,14 @@ package UI.Panel;
 
 /**
  *
- * @author Teo
+ * @author thanhtr
  */
-public class Rectangular extends javax.swing.JPanel {
+public class Sphere extends javax.swing.JPanel {
 
     /**
-     * Creates new form Rectangular
+     * Creates new form Sphere
      */
-    public Rectangular() {
+    public Sphere() {
         initComponents();
     }
 
