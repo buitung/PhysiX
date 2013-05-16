@@ -48,6 +48,7 @@ public class ProjectileInformation extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1);
 
+        jTextPane1.setEditable(false);
         jTextPane1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTextPane1.setText("A projectile is any object projected into space by the exertion of a force. The projectile described here is that an object is projected upward with an angle with the horizontal line. \nThe projected object of velocity v of and the angle \"alpha\" with the horizontal line.\nGravity acceleration g = 9.8 m/s^2 \n\nThe projectile maximum traveil distance is \n\td = v*v*sin(2*alpha)/g. \n\nThe projectile total air time is \n\tt = 2*v*sin(alpha)/g. \n\nThe projectile maimum achieve height is \n\th = v*v*sin(alpha)*sin(alpha)/(2*g).\n");
         jScrollPane2.setViewportView(jTextPane1);

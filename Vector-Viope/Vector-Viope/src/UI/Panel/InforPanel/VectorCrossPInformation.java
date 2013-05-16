@@ -48,6 +48,7 @@ public class VectorCrossPInformation extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1);
 
+        jTextPane1.setEditable(false);
         jTextPane1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTextPane1.setText("Vector is a geometric object that has magnitude (or length) and direction and can be added to other vectors according to vector algebra; it is frequently represented by a line segment with a definite direction, or graphically as an arrow, connecting an initial point A with a terminal point B.\n\nAssume now that a and b are not necessarily equal vectors, but that they may have different magnitudes and directions.\n\ta = a1.i + a2.j + a3.k\n\tb = b1.i + b2.j + b3.k\n\nThe cross product of a and b is: \n\ta x b = (a2*b3 - a3*b2)i + (a3*b1 - a1*b3)j + (a1*b2 - b1*a2)k");
         jScrollPane2.setViewportView(jTextPane1);
@@ -75,7 +76,7 @@ public class VectorCrossPInformation extends javax.swing.JPanel {
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 253, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2)))
                 .addContainerGap())
         );

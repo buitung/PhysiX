@@ -49,6 +49,7 @@ public class AngleCalInformation extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1);
 
+        jTextPane1.setEditable(false);
         jTextPane1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTextPane1.setText("In geometry, an angle is the figure formed by two rays, called the sides of the angle, sharing a common endpoint, called the vertex of the angle.Angle can be measure in degree or in radian. \nRadian describes the plane angle subtended by a circular arc as the length of the arc divided by the radius of the arc. One radian is the angle subtended at the center of a circle by an arc that is equal in length to the radius of the circle.\n\nThe conversion between angle in degree and in radian:\n\tangle_in_degree =  angle_in_radian * 180(degree) / pi\n\nTake into account one corner in a right triangle with hypotenuse, opposite and adjacent sides\nSine, Cosine and Tangent of one angle are trigonometric functions, putting in the above context:\n\tSin = Opp/Hypo\n\tCos = Adj/Hypo\n\tTan = Opp/ Adj = Sin/Cos\n");
         jScrollPane2.setViewportView(jTextPane1);
@@ -73,7 +74,7 @@ public class AngleCalInformation extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 484, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
