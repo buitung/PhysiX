@@ -54,6 +54,11 @@ public class VectorDistance extends javax.swing.JPanel {
         jButton2.setText("Information");
 
         jButton1.setText("Calculate");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel2.setText("Copyright by IPEramus 2013");
@@ -69,11 +74,6 @@ public class VectorDistance extends javax.swing.JPanel {
         jLabel5.setText(" j + ");
 
         jTextField3.setText("  ");
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
 
         jLabel6.setText(" k");
 
@@ -85,11 +85,6 @@ public class VectorDistance extends javax.swing.JPanel {
         jLabel10.setText(" k");
 
         jTextField6.setText("  ");
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
-            }
-        });
 
         jLabel9.setText(" j + ");
 
@@ -190,14 +185,19 @@ public class VectorDistance extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+        PhysixLib.Vector v1 = new PhysixLib.Vector(
+                Float.parseFloat(jTextField1.getText()),
+                Float.parseFloat(jTextField2.getText()),
+                Float.parseFloat(jTextField3.getText()));
+        PhysixLib.Vector v2 = new PhysixLib.Vector(
+                Float.parseFloat(jTextField4.getText()),
+                Float.parseFloat(jTextField5.getText()),
+                Float.parseFloat(jTextField6.getText()));
+        jLabel12.setText(Float.toString(v1.DistanceVec(v2)));
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
-
+    }//GEN-LAST:event_jButton1ActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

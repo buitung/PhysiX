@@ -4,6 +4,8 @@
  */
 package UI.Panel;
 
+import PhysixLib.MathUtils;
+
 /**
  *
  * @author thanhtr
@@ -46,7 +48,8 @@ public class VectorAngle extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jToggleButton1 = new javax.swing.JToggleButton();
+        jLabel12 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
 
         jLabel7.setText("Vector 2");
 
@@ -55,6 +58,11 @@ public class VectorAngle extends javax.swing.JPanel {
         jButton2.setText("Information");
 
         jButton1.setText("Calculate");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel2.setText("Copyright by IPEramus 2013");
@@ -70,11 +78,6 @@ public class VectorAngle extends javax.swing.JPanel {
         jLabel5.setText(" j + ");
 
         jTextField3.setText("  ");
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
 
         jLabel6.setText(" k");
 
@@ -88,11 +91,6 @@ public class VectorAngle extends javax.swing.JPanel {
         jLabel10.setText(" k");
 
         jTextField6.setText("  ");
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
-            }
-        });
 
         jLabel9.setText(" j + ");
 
@@ -100,7 +98,14 @@ public class VectorAngle extends javax.swing.JPanel {
 
         jLabel8.setText(" i + ");
 
-        jToggleButton1.setText("deg/rad");
+        jLabel12.setText("Degree");
+
+        jButton3.setText("Deg/Rad");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -143,7 +148,7 @@ public class VectorAngle extends javax.swing.JPanel {
                                         .addComponent(jLabel8))
                                     .addComponent(jLabel14))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -152,7 +157,10 @@ public class VectorAngle extends javax.swing.JPanel {
                                         .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel10))
-                                    .addComponent(jToggleButton1)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel12)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jButton1)
                                 .addGap(194, 194, 194)
@@ -187,7 +195,8 @@ public class VectorAngle extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(jLabel14)
-                    .addComponent(jToggleButton1))
+                    .addComponent(jLabel12)
+                    .addComponent(jButton3))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
@@ -195,20 +204,54 @@ public class VectorAngle extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+        PhysixLib.Vector v1 = new PhysixLib.Vector(
+                Float.parseFloat(jTextField1.getText()),
+                Float.parseFloat(jTextField2.getText()),
+                Float.parseFloat(jTextField3.getText()));
+        PhysixLib.Vector v2 = new PhysixLib.Vector(
+                Float.parseFloat(jTextField4.getText()),
+                Float.parseFloat(jTextField5.getText()),
+                Float.parseFloat(jTextField6.getText()));
+        float ang = v1.AngleVec(v2);
+        if (jLabel12.getText().equalsIgnoreCase("Degree")){
+            ang = MathUtils.Rag2Deg(ang);
+        }
+        jLabel14.setText(Float.toString(ang));
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+        if (jLabel14.getText().equals("")){
+            if (jLabel12.getText().equalsIgnoreCase("Degree")){
+                jLabel12.setText("Radian");
+            } else{
+                jLabel12.setText("Degree");
+            }
+        } else{
+            if (jLabel12.getText().equalsIgnoreCase("Degree")){
+                jLabel12.setText("Radian");
+                jLabel14.setText(Float.toString( 
+                        MathUtils.Deg2Rad(Float.parseFloat(jLabel14.getText()))
+                        ));
+            } else{
+                jLabel12.setText("Degree");
+                jLabel14.setText(Float.toString( 
+                        MathUtils.Rag2Deg(Float.parseFloat(jLabel14.getText()))
+                        ));
+            }
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -224,6 +267,5 @@ public class VectorAngle extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }
