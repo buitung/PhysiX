@@ -101,6 +101,11 @@ public class Pyramid extends javax.swing.JPanel {
         jLabel14.setText("Surface Area");
 
         jButton1.setText("Calculate");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel15.setText("m");
 
@@ -217,6 +222,16 @@ public class Pyramid extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        PhysixLib.Pyramid py = new PhysixLib.Pyramid(Float.parseFloat(jTextField1.getText().toString()),
+                Float.parseFloat(jTextField2.getText().toString()),
+                Float.parseFloat(jTextField3.getText().toString()),
+                Float.parseFloat(jTextField4.getText().toString()));
+        jLabel11.setText(Float.toString(py.Area()));
+        jLabel12.setText(Float.toString(py.Volume()));
+
+    }//GEN-LAST:event_jButton1ActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
