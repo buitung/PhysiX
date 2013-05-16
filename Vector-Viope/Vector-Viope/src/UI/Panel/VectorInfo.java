@@ -4,6 +4,7 @@
  */
 package UI.Panel;
 
+import UI.Panel.InforPanel.VectorInfoInformation;
 import javax.swing.JFrame;
 
 /**

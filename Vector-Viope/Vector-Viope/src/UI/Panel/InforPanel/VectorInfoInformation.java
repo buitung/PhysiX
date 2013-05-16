@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package UI.Panel;
+package UI.Panel.InforPanel;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -100,7 +100,7 @@ public class VectorInfoInformation extends javax.swing.JPanel {
 
         jPanel2.add(jScrollPane2);
 
-        jTextPane1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jTextPane1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTextPane1.setText("Vector is a geometric object that has magnitude (or length) and direction and can be added to other vectors according to vector algebra; it is frequently represented by a line segment with a definite direction, or graphically as an arrow, connecting an initial point A with a terminal point B.\n\nAssume now that a is a vector\n    a = a1.i + a2.j + a3.k\n\nMagnitude of vector a is: \n    Mag_a = SqrRoot( a1^2 + a2^2 + a3^2 )\n\nNormalized vector of a is:\n    Norm_a = (a1/Mag_a)i + (a2/Mag_a)j + (a3/Mag_a)k\n");
         jScrollPane3.setViewportView(jTextPane1);
 
