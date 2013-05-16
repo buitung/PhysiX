@@ -6,6 +6,7 @@ package UI.Panel.MainPanel;
 
 import UI.Panel.InforPanel.VectorCrossPInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -251,19 +252,26 @@ public class VectorCrossProduct extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        PhysixLib.Vector v1 = new PhysixLib.Vector(
-                Float.parseFloat(jTextField1.getText()),
-                Float.parseFloat(jTextField2.getText()),
-                Float.parseFloat(jTextField3.getText()));
-        PhysixLib.Vector v2 = new PhysixLib.Vector(
-                Float.parseFloat(jTextField4.getText()),
-                Float.parseFloat(jTextField5.getText()),
-                Float.parseFloat(jTextField6.getText()));
+        try {
+            PhysixLib.Vector v1 = new PhysixLib.Vector(
+                    Float.parseFloat(jTextField1.getText()),
+                    Float.parseFloat(jTextField2.getText()),
+                    Float.parseFloat(jTextField3.getText()));
+            PhysixLib.Vector v2 = new PhysixLib.Vector(
+                    Float.parseFloat(jTextField4.getText()),
+                    Float.parseFloat(jTextField5.getText()),
+                    Float.parseFloat(jTextField6.getText()));
 
-        PhysixLib.Vector v3 = v1.CrossProduct(v2);
-        jLabel15.setText(Float.toString(v3.getX()));
-        jLabel18.setText(Float.toString(v3.getY()));
-        jLabel17.setText(Float.toString(v3.getZ()));
+            PhysixLib.Vector v3 = v1.CrossProduct(v2);
+            jLabel15.setText(Float.toString(v3.getX()));
+            jLabel18.setText(Float.toString(v3.getY()));
+            jLabel17.setText(Float.toString(v3.getZ()));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please enter two vectors in the right form");
+            jLabel15.setText("");
+            jLabel18.setText("");
+            jLabel17.setText("");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -275,7 +283,6 @@ public class VectorCrossProduct extends javax.swing.JPanel {
         infoFr.setTitle("About calculating Cross Product between 2 Vectors");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton2ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

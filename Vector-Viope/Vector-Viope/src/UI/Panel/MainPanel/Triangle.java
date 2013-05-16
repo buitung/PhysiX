@@ -6,6 +6,7 @@ package UI.Panel.MainPanel;
 
 import UI.Panel.InforPanel.TriangleInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -205,14 +206,34 @@ public class Triangle extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private boolean checkTriangle(float a, float b, float c) {
+        return (a + b > c) && (a + c > b) && (c + b > a) && (a > 0) && (b * c > 0);
+    }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        PhysixLib.Triangle tri = new PhysixLib.Triangle(Float.parseFloat(jTextField1.getText().toString()),
-                Float.parseFloat(jTextField2.getText().toString()),
-                Float.parseFloat(jTextField3.getText().toString()));
-        jLabel9.setText(Float.toString(tri.Perimeter()));
-        jLabel12.setText(Float.toString(tri.Area()));
-
+        try {
+            PhysixLib.Triangle tri = new PhysixLib.Triangle(Float.parseFloat(jTextField1.getText().toString()),
+                    Float.parseFloat(jTextField2.getText().toString()),
+                    Float.parseFloat(jTextField3.getText().toString()));
+            if (!checkTriangle(Float.parseFloat(jTextField1.getText().toString()),
+                    Float.parseFloat(jTextField2.getText().toString()),
+                    Float.parseFloat(jTextField3.getText().toString()))) {
+                throw new ArithmeticException();
+            }
+            jLabel9.setText(Float.toString(tri.Perimeter()));
+            jLabel12.setText(Float.toString(tri.Area()));
+        } catch (ArithmeticException e) {
+            JOptionPane.showMessageDialog(this,
+                    "These are not three side of a triangle\n"
+                    + "Please enter again three side of a triangle");
+            jLabel9.setText("");
+            jLabel12.setText("");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,
+                    "Please enter three side of a triangle in the right form");
+            jLabel9.setText("");
+            jLabel12.setText("");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -224,7 +245,6 @@ public class Triangle extends javax.swing.JPanel {
         infoFr.setTitle("About Triangle");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton2ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

@@ -7,6 +7,7 @@ package UI.Panel.MainPanel;
 import PhysixLib.MathUtils;
 import UI.Panel.InforPanel.AngleCalInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -191,75 +192,94 @@ public class AngleCalculation extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        if (jLabel10.getText().equalsIgnoreCase("Degree")) {
-            jLabel10.setText("Radian");
-            jTextField1.setText(
-                    Float.toString(
-                    MathUtils.Deg2Rad(Float.parseFloat(jTextField1.getText()))));
+        if (jTextField1.getText().trim().length() > 0) {
+            try {
+                if (jLabel10.getText().equalsIgnoreCase("Degree")) {
+                    jLabel10.setText("Radian");
+                    jTextField1.setText(
+                            Float.toString(
+                            MathUtils.Deg2Rad(Float.parseFloat(jTextField1.getText()))));
+                } else {
+                    jLabel10.setText("Degree");
+                    jTextField1.setText(
+                            Float.toString(
+                            MathUtils.Rag2Deg(Float.parseFloat(jTextField1.getText()))));
+                }
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, "Please enter the angle in the right form");
+                jLabel7.setText("");
+                jLabel8.setText("");
+                jLabel9.setText("");
+            }
         } else {
-            jLabel10.setText("Degree");
-            jTextField1.setText(
-                    Float.toString(
-                    MathUtils.Rag2Deg(Float.parseFloat(jTextField1.getText()))));
-
+            if (jLabel10.getText().equalsIgnoreCase("Degree")) {
+                jLabel10.setText("Radian");
+            } else {
+                jLabel10.setText("Degree");
+            }
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         double ee = 0.0001;
-        double ang = Double.parseDouble(jTextField1.getText());
-        if (jLabel10.getText().equalsIgnoreCase("Degree")) {
-            ang = MathUtils.Deg2Rad((float) ang);
-        }
-        //double s = Math.sin(ang);
-        //double c = Math.cos(ang);
-        //double t = Math.tan(ang);
-        if (Double.toString(Math.sin(ang)).length() > 6) {
-            double s = Double.parseDouble(Double.toString(Math.sin(ang)).substring(0, 6));
-            if (s + ee >= 1.0) {
-                s = 1.0;
+        try {
+            double ang = Double.parseDouble(jTextField1.getText());
+            if (jLabel10.getText().equalsIgnoreCase("Degree")) {
+                ang = MathUtils.Deg2Rad((float) ang);
             }
-            if (s < ee) {
-                s = 0.0;
+            double s = Math.sin(ang);
+            if (Math.abs(s) < ee) {
+                s = 0;
+            } else if (Math.abs(s) + ee >= 1.0) {
+                if (s >= 0) {
+                    s = 1.0;
+                } else {
+                    s = -1.0;
+                }
             }
-            if (s - ee <= -1.0) {
-                s = -1.0;
+            double c = Math.cos(ang);
+            System.out.println(c);
+            if (Math.abs(c) < ee) {
+                c = 0;
+            } else if (Math.abs(c) + ee >= 1.0) {
+                if (c >= 0) {
+                    c = 1.0;
+                } else {
+                    c = -1.0;
+                }
             }
-            jLabel7.setText(Double.toString(s));
-        } else {
-            jLabel7.setText(Double.toString(Math.sin(ang)));
-        }
-        if (Double.toString(Math.cos(ang)).length() > 6) {
-            double c = Double.parseDouble(Double.toString(Math.cos(ang)).substring(0, 6));
-            if (c + ee >= 1.0) {
-                c = 1.0;
+            double t = s / c;
+            if (Math.abs(t) < ee) {
+                t = 0;
+            } else if (Math.abs(t) + ee >= Math.ceil(Math.abs(t))) {
+                if (t >= 0) {
+                    t = Math.ceil(t);
+                } else {
+                    t = Math.ceil(t) * (float) (-1.0);
+                }
             }
-            if (c < ee) {
-                c = 0.0;
+            System.out.println(c);
+            if (Double.toString(s).length() > 6) {
+                jLabel7.setText(Double.toString(s).substring(0, 6));
+            } else {
+                jLabel7.setText(Double.toString(s));
             }
-            if (c - ee <= -1.0) {
-                c = -1.0;
+            if (Double.toString(c).length() > 6) {
+                jLabel8.setText(Double.toString(c).substring(0, 6));
+            } else {
+                jLabel8.setText(Double.toString(c));
             }
-            jLabel8.setText(Double.toString(c));
-        } else {
-            jLabel8.setText(Double.toString(Math.cos(ang)));
-        }
-        if (Double.toString(Math.tan(ang)).length() > 6) {
-            double t = Double.parseDouble(Double.toString(Math.tan(ang)).substring(0, 6));
-            if (t + ee >= Math.ceil(t)) {
-                t = Math.ceil(t);
+            if (Double.toString(t).length() > 6) {
+                jLabel9.setText(Double.toString(t).substring(0, 6));
+            } else {
+                jLabel9.setText(Double.toString(t));
             }
-            if (t < ee) {
-                t = 0.0;
-            }
-            if (t - ee <= Math.floor(t)) {
-                t = Math.floor(t);
-            }
-
-            jLabel9.setText(Double.toString(t));
-        } else {
-            jLabel9.setText(Double.toString(Math.tan(ang)));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please enter the angle in the right form");
+            jLabel7.setText("");
+            jLabel8.setText("");
+            jLabel9.setText("");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

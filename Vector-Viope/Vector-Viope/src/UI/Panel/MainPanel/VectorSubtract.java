@@ -6,6 +6,7 @@ package UI.Panel.MainPanel;
 
 import UI.Panel.InforPanel.VectorSubInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -162,9 +163,7 @@ public class VectorSubtract extends javax.swing.JPanel {
                                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(27, 27, 27))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(0, 0, 0)))
+                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
@@ -236,13 +235,14 @@ public class VectorSubtract extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel13)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel13)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel11)
+                                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel12))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -254,20 +254,26 @@ public class VectorSubtract extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        PhysixLib.Vector v1 = new PhysixLib.Vector(
-                Float.parseFloat(jTextField1.getText()),
-                Float.parseFloat(jTextField2.getText()),
-                Float.parseFloat(jTextField3.getText()));
-        PhysixLib.Vector v2 = new PhysixLib.Vector(
-                Float.parseFloat(jTextField4.getText()),
-                Float.parseFloat(jTextField5.getText()),
-                Float.parseFloat(jTextField6.getText()));
-        v1.SubVec(v2);
-        jLabel15.setText(Float.toString(v1.getX()));
-        jLabel16.setText(Float.toString(v1.getY()));
-        jLabel17.setText(Float.toString(v1.getZ()));
+        try {
+            PhysixLib.Vector v1 = new PhysixLib.Vector(
+                    Float.parseFloat(jTextField1.getText()),
+                    Float.parseFloat(jTextField2.getText()),
+                    Float.parseFloat(jTextField3.getText()));
+            PhysixLib.Vector v2 = new PhysixLib.Vector(
+                    Float.parseFloat(jTextField4.getText()),
+                    Float.parseFloat(jTextField5.getText()),
+                    Float.parseFloat(jTextField6.getText()));
+            v1.SubVec(v2);
+            jLabel15.setText(Float.toString(v1.getX()));
+            jLabel16.setText(Float.toString(v1.getY()));
+            jLabel17.setText(Float.toString(v1.getZ()));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please enter two vectors in the right form");
+            jLabel15.setText("");
+            jLabel16.setText("");
+            jLabel17.setText("");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         JFrame infoFr = new JFrame();
@@ -281,7 +287,6 @@ public class VectorSubtract extends javax.swing.JPanel {
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

@@ -6,6 +6,7 @@ package UI.Panel.MainPanel;
 
 import UI.Panel.InforPanel.SphereInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -156,10 +157,23 @@ public class Sphere extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        PhysixLib.Sphere sph = new PhysixLib.Sphere(Float.parseFloat(jTextField1.getText().toString()));
-        jLabel11.setText(Float.toString(sph.Area()));
-        jLabel12.setText(Float.toString(sph.Volume()));
-
+        try {
+            PhysixLib.Sphere sph = new PhysixLib.Sphere(Float.parseFloat(jTextField1.getText().toString()));
+            if (Float.parseFloat(jTextField1.getText())<=0)
+                throw new ArithmeticException();
+            jLabel11.setText(Float.toString(sph.Area()));
+            jLabel12.setText(Float.toString(sph.Volume()));
+        } catch (ArithmeticException e) {
+            JOptionPane.showMessageDialog(this, 
+                    "Radius must be higher than zero.\n"
+                    + "Please enter the radius again.");
+            jLabel11.setText("");
+            jLabel12.setText("");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please enter the radius in the right form");
+            jLabel11.setText("");
+            jLabel12.setText("");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -171,7 +185,6 @@ public class Sphere extends javax.swing.JPanel {
         infoFr.setTitle("About Sphere");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton2ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

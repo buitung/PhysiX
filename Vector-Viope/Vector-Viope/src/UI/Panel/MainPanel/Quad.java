@@ -6,6 +6,7 @@ package UI.Panel.MainPanel;
 
 import UI.Panel.InforPanel.QuadInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -204,11 +205,26 @@ public class Quad extends javax.swing.JPanel {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        PhysixLib.Quad qu = new PhysixLib.Quad(Float.parseFloat(jTextField2.getText().toString()),
-                Float.parseFloat(jTextField1.getText().toString()));
-        jLabel14.setText(Float.toString(qu.Area()));
-        jLabel15.setText(Float.toString(qu.Perimeter()));
-
+        try {
+            PhysixLib.Quad qu = new PhysixLib.Quad(Float.parseFloat(jTextField2.getText().toString()),
+                    Float.parseFloat(jTextField1.getText().toString()));
+            if (Float.parseFloat(jTextField1.getText().toString())<=0 ||
+                    Float.parseFloat(jTextField2.getText().toString())<=0){
+                throw new ArithmeticException();
+            }
+            jLabel14.setText(Float.toString(qu.Area()));
+            jLabel15.setText(Float.toString(qu.Perimeter()));
+        } catch (ArithmeticException e) {
+            JOptionPane.showMessageDialog(this, 
+                    "The width and the height must be higher than zero.\n"
+                    + "Please enter the width and height again");
+            jLabel14.setText("");
+            jLabel15.setText("");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please enter the width and height in the right form");
+            jLabel14.setText("");
+            jLabel15.setText("");
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -220,7 +236,6 @@ public class Quad extends javax.swing.JPanel {
         infoFr.setTitle("About Rectangle and Square");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton1ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

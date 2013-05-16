@@ -7,6 +7,7 @@ package UI.Panel.MainPanel;
 import PhysixLib.MathUtils;
 import UI.Panel.InforPanel.VectorAngleInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -234,40 +235,43 @@ public class VectorAngle extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        PhysixLib.Vector v1 = new PhysixLib.Vector(
-                Float.parseFloat(jTextField1.getText()),
-                Float.parseFloat(jTextField2.getText()),
-                Float.parseFloat(jTextField3.getText()));
-        PhysixLib.Vector v2 = new PhysixLib.Vector(
-                Float.parseFloat(jTextField4.getText()),
-                Float.parseFloat(jTextField5.getText()),
-                Float.parseFloat(jTextField6.getText()));
-        float ang = v1.AngleVec(v2);
-        if (jLabel12.getText().equalsIgnoreCase("Degree")){
-            ang = MathUtils.Rag2Deg(ang);
+        try {
+            PhysixLib.Vector v1 = new PhysixLib.Vector(
+                    Float.parseFloat(jTextField1.getText()),
+                    Float.parseFloat(jTextField2.getText()),
+                    Float.parseFloat(jTextField3.getText()));
+            PhysixLib.Vector v2 = new PhysixLib.Vector(
+                    Float.parseFloat(jTextField4.getText()),
+                    Float.parseFloat(jTextField5.getText()),
+                    Float.parseFloat(jTextField6.getText()));
+            float ang = v1.AngleVec(v2);
+            if (jLabel12.getText().equalsIgnoreCase("Degree")) {
+                ang = MathUtils.Rag2Deg(ang);
+            }
+            jLabel14.setText(Float.toString(ang));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please enter two vectors in the right form");
+            jLabel14.setText("");
         }
-        jLabel14.setText(Float.toString(ang));
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        if (jLabel14.getText().equals("")){
-            if (jLabel12.getText().equalsIgnoreCase("Degree")){
+        if (jLabel14.getText().trim().length() == 0) {
+            if (jLabel12.getText().equalsIgnoreCase("Degree")) {
                 jLabel12.setText("Radian");
-            } else{
+            } else {
                 jLabel12.setText("Degree");
             }
-        } else{
-            if (jLabel12.getText().equalsIgnoreCase("Degree")){
+        } else {
+            if (jLabel12.getText().equalsIgnoreCase("Degree")) {
                 jLabel12.setText("Radian");
-                jLabel14.setText(Float.toString( 
-                        MathUtils.Deg2Rad(Float.parseFloat(jLabel14.getText()))
-                        ));
-            } else{
+                jLabel14.setText(Float.toString(
+                        MathUtils.Deg2Rad(Float.parseFloat(jLabel14.getText()))));
+            } else {
                 jLabel12.setText("Degree");
-                jLabel14.setText(Float.toString( 
-                        MathUtils.Rag2Deg(Float.parseFloat(jLabel14.getText()))
-                        ));
+                jLabel14.setText(Float.toString(
+                        MathUtils.Rag2Deg(Float.parseFloat(jLabel14.getText()))));
             }
         }
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -281,7 +285,6 @@ public class VectorAngle extends javax.swing.JPanel {
         infoFr.setTitle("About Angle between 2 Vectors");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton2ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

@@ -7,6 +7,7 @@ package UI.Panel.MainPanel;
 import PhysixLib.MathUtils;
 import UI.Panel.InforPanel.ProjectileInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -225,31 +226,57 @@ public class Projectile extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        if (jLabel12.getText().equalsIgnoreCase("Degree")) {
-            jLabel12.setText("Radian");
-            jTextField1.setText(
-                    Float.toString(
-                    MathUtils.Deg2Rad(Float.parseFloat(jTextField1.getText()))));
+        if (jLabel12.getText().trim().length() > 0) {
+            try {
+                if (jLabel12.getText().equalsIgnoreCase("Degree")) {
+                    jLabel12.setText("Radian");
+                    jTextField1.setText(
+                            Float.toString(
+                            MathUtils.Deg2Rad(Float.parseFloat(jTextField1.getText()))));
+                } else {
+                    jLabel12.setText("Degree");
+                    jTextField1.setText(
+                            Float.toString(
+                            MathUtils.Rag2Deg(Float.parseFloat(jTextField1.getText()))));
+                }
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, 
+                        "Please enter the angle and the velocity in the right form");
+            }
         } else {
-            jLabel12.setText("Degree");
-            jTextField1.setText(
-                    Float.toString(
-                    MathUtils.Rag2Deg(Float.parseFloat(jTextField1.getText()))));
+            if (jLabel12.getText().equalsIgnoreCase("Degree")) {
+                jLabel12.setText("Radian");
+            } else {
+                jLabel12.setText("Degree");
+            }
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        float velocity = Float.parseFloat(jTextField2.getText());
-        float ang = Float.parseFloat(jTextField1.getText());
-        if (jLabel12.getText().equalsIgnoreCase("Degree")) {
-            ang = MathUtils.Deg2Rad(ang);
+        try {
+            float velocity = Float.parseFloat(jTextField2.getText());
+            if (velocity<0) throw new ArithmeticException();
+            float ang = Float.parseFloat(jTextField1.getText());
+            if (jLabel12.getText().equalsIgnoreCase("Degree")) {
+                ang = MathUtils.Deg2Rad(ang);
+            }
+            PhysixLib.Projectile pp = new PhysixLib.Projectile(velocity, ang);
+            jLabel8.setText(Float.toString(pp.Distance()));
+            jLabel9.setText(Float.toString(pp.Height()));
+            jLabel10.setText(Float.toString(pp.ProjTime()));
+        } catch (ArithmeticException e){
+            JOptionPane.showMessageDialog(this, 
+                    "The velocity must be higher or equal zero.\n"
+                    + "Please enter the velocity in the right form");
+        } 
+        catch (Exception e) {
+            JOptionPane.showMessageDialog(this, 
+                    "Please enter the angle and the velocity in the right form");
+            jLabel8.setText("");
+            jLabel9.setText("");
+            jLabel10.setText("");
         }
-        PhysixLib.Projectile pp = new PhysixLib.Projectile(velocity, ang);
-        jLabel8.setText(Float.toString(pp.Distance()));
-        jLabel9.setText(Float.toString(pp.Height()));
-        jLabel10.setText(Float.toString(pp.ProjTime()));
-        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -261,7 +288,6 @@ public class Projectile extends javax.swing.JPanel {
         infoFr.setTitle("About Projectile");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton2ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

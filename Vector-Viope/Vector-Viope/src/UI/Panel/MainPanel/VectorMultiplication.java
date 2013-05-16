@@ -6,6 +6,7 @@ package UI.Panel.MainPanel;
 
 import UI.Panel.InforPanel.VectorMulInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -211,15 +212,23 @@ public class VectorMultiplication extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        PhysixLib.Vector v1 = new PhysixLib.Vector(
-                Float.parseFloat(jTextField1.getText()),
-                Float.parseFloat(jTextField2.getText()),
-                Float.parseFloat(jTextField3.getText()));
-        float h = Float.parseFloat(jTextField4.getText());
-        v1.Product(h);
-        jLabel18.setText(Float.toString(v1.getX()));
-        jLabel16.setText(Float.toString(v1.getY()));
-        jLabel17.setText(Float.toString(v1.getZ()));
+        try {
+            PhysixLib.Vector v1 = new PhysixLib.Vector(
+                    Float.parseFloat(jTextField1.getText()),
+                    Float.parseFloat(jTextField2.getText()),
+                    Float.parseFloat(jTextField3.getText()));
+            float h = Float.parseFloat(jTextField4.getText());
+            v1.Product(h);
+            jLabel18.setText(Float.toString(v1.getX()));
+            jLabel16.setText(Float.toString(v1.getY()));
+            jLabel17.setText(Float.toString(v1.getZ()));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please enter information in the right form");
+            jLabel18.setText("");
+            jLabel16.setText("");
+            jLabel17.setText("");
+
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -231,7 +240,6 @@ public class VectorMultiplication extends javax.swing.JPanel {
         infoFr.setTitle("About multiplucating Vector with a number");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton2ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

@@ -7,6 +7,7 @@ package UI.Panel.MainPanel;
 import PhysixLib.MathUtils;
 import UI.Panel.InforPanel.SideCalInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -191,28 +192,56 @@ public class SideCalculation extends javax.swing.JPanel {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        float ang = Float.parseFloat(jTextField1.getText());
-        if (jLabel7.getText().equalsIgnoreCase("Degree")) {
-            ang = MathUtils.Deg2Rad(ang);
+        try {
+            float ang = Float.parseFloat(jTextField1.getText());
+            if (jLabel7.getText().equalsIgnoreCase("Degree")) {
+                ang = MathUtils.Deg2Rad(ang);
+            }
+            float h = Float.parseFloat(jTextField2.getText());
+            if (h<=0) throw new ArithmeticException();
+            jLabel9.setText(Float.toString(MathUtils.AdjacentSide(ang, h)));
+            jLabel8.setText(Float.toString(MathUtils.OppositeSide(ang, h)));
+        } catch (ArithmeticException e) {
+            JOptionPane.showMessageDialog(this, 
+                    "Hypotenuse must be higher than zero.\n"
+                    + "Please enter the hypotenuse again");
+            jLabel9.setText("");
+            jLabel8.setText("");
+        } catch (Exception e){
+            JOptionPane.showMessageDialog(this, 
+                    "Please enter hypotenuse and angle in the right form");
+            jLabel9.setText("");
+            jLabel8.setText("");
         }
-        float h = Float.parseFloat(jTextField2.getText());
-        jLabel9.setText(Float.toString(MathUtils.AdjacentSide(ang, h)));
-        jLabel8.setText(Float.toString(MathUtils.OppositeSide(ang, h)));
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        if (jLabel7.getText().equalsIgnoreCase("Degree")) {
-            jLabel7.setText("Radian");
-            jTextField1.setText(
-                    Float.toString(
-                    MathUtils.Deg2Rad(Float.parseFloat(jTextField1.getText()))));
-        } else {
-            jLabel7.setText("Degree");
-            jTextField1.setText(
-                    Float.toString(
-                    MathUtils.Rag2Deg(Float.parseFloat(jTextField1.getText()))));
+        if (jTextField1.getText().trim().length() > 0) {
+            try {
+                if (jLabel7.getText().equalsIgnoreCase("Degree")) {
+                    jLabel7.setText("Radian");
+                    jTextField1.setText(
+                            Float.toString(
+                            MathUtils.Deg2Rad(Float.parseFloat(jTextField1.getText()))));
+                } else {
+                    jLabel7.setText("Degree");
+                    jTextField1.setText(
+                            Float.toString(
+                            MathUtils.Rag2Deg(Float.parseFloat(jTextField1.getText()))));
 
+                }
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, "Please enter the angle in the right form");
+                jLabel9.setText("");
+                jLabel8.setText("");
+            }
+        } else {
+            if (jLabel7.getText().equalsIgnoreCase("Degree")) {
+                jLabel7.setText("Radian");
+            } else {
+                jLabel7.setText("Degree");
+            }
         }
 
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -226,7 +255,6 @@ public class SideCalculation extends javax.swing.JPanel {
         infoFr.setTitle("About calculating side");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton1ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

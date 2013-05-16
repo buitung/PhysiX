@@ -6,6 +6,7 @@ package UI.Panel.MainPanel;
 
 import UI.Panel.InforPanel.CircleInformation;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -171,10 +172,26 @@ public class Circle extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        PhysixLib.Circle cir = new PhysixLib.Circle(Float.parseFloat(jTextField1.getText().toString()));
-        jLabel6.setText(Float.toString(cir.Circumference()));
-        jLabel9.setText(Float.toString(cir.Area()));
+        try {
+            PhysixLib.Circle cir = new PhysixLib.Circle(Float.parseFloat(jTextField1.getText().toString()));
+            if (Float.parseFloat(jTextField1.getText()) <= 0) {
+                throw new ArithmeticException();
+            }
+            jLabel6.setText(Float.toString(cir.Circumference()));
+            jLabel9.setText(Float.toString(cir.Area()));
+        } catch (ArithmeticException e) {
+            JOptionPane.showMessageDialog(this,
+                    "Radius must be higher than zero.\n"
+                    + "Please enter the radius again.");
+            jLabel6.setText("");
+            jLabel9.setText("");
 
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please enter the radius in the right form");
+            jLabel6.setText("");
+            jLabel9.setText("");
+
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -186,7 +203,6 @@ public class Circle extends javax.swing.JPanel {
         infoFr.setTitle("About Circle");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton2ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
