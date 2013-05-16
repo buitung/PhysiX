@@ -33,8 +33,8 @@ public class BrickInformation extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jLabel3 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -53,14 +53,11 @@ public class BrickInformation extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1);
 
-        jTextArea2.setEditable(false);
-        jTextArea2.setColumns(20);
-        jTextArea2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextArea2.setRows(5);
-        jTextArea2.setText("A brick is a cubic object in geometry. It has twelve edges, eight corners and six faces.\nA brick has width w, height h and length l.\n\nThe surface area of the brick is: \n\ta = 2*w*h + 2*w*l + 2*h*l\nThe  volume of the brick is:\n\tv = w*h*l\n");
-        jScrollPane3.setViewportView(jTextArea2);
+        jTextPane1.setEditable(false);
+        jTextPane1.setText("A brick is a cubic object in geometry. It has twelve edges, eight corners and six faces.\nA brick has width w, height h and length l.\n\nThe surface area of the brick is: \n\ta = 2*w*h + 2*w*l + 2*h*l\nThe  volume of the brick is:\n\tv = w*h*l\n");
+        jScrollPane4.setViewportView(jTextPane1);
 
-        jPanel1.add(jScrollPane3);
+        jPanel1.add(jScrollPane4);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -68,7 +65,7 @@ public class BrickInformation extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 178, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 261, Short.MAX_VALUE)
                 .addComponent(jLabel2))
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
@@ -89,8 +86,8 @@ public class BrickInformation extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }

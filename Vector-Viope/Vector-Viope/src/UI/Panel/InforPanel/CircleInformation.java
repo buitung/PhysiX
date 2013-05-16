@@ -31,8 +31,8 @@ public class CircleInformation extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jLabel3 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
 
         jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel1.setText("Welcome to PhysiX");
@@ -48,14 +48,11 @@ public class CircleInformation extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("A circle is a set of points in a plane that are a given distance from a given point, the center. The distance between any of the points and the center is called the radius.\nA circle of radius r \n\nThe circumference of the circle:\n \tc = 2*pi*r\nThe area of the circle:\n \ta = pi*r^2\n\n");
-        jScrollPane2.setViewportView(jTextArea1);
+        jTextPane1.setEditable(false);
+        jTextPane1.setText("A circle is a set of points in a plane that are a given distance from a given point, the center. The distance between any of the points and the center is called the radius.\nA circle of radius r \n\nThe circumference of the circle:\n \tc = 2*pi*r\nThe area of the circle:\n \ta = pi*r^2\n\n");
+        jScrollPane3.setViewportView(jTextPane1);
 
-        jPanel1.add(jScrollPane2);
+        jPanel1.add(jScrollPane3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -67,7 +64,7 @@ public class CircleInformation extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addContainerGap())
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -76,7 +73,7 @@ public class CircleInformation extends javax.swing.JPanel {
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 547, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -85,7 +82,7 @@ public class CircleInformation extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }

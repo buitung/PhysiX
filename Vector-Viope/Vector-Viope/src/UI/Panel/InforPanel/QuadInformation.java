@@ -31,8 +31,8 @@ public class QuadInformation extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jLabel3 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
 
         jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel1.setText("Welcome to PhysiX");
@@ -47,14 +47,11 @@ public class QuadInformation extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("A quad is one of the basic shapes in geometry. It is a polygon with four corners or vertices and four sides or edges which are line segments. The two opposite sides are equal. The adjacent two sides form a 90 degree angle.\nA quad of width w and height h. If w = h the quad is a square, otherwise it is a rectangular\n\nThe area of the quad \n\ta = w*h \nThe perimeter of the quad \n\tp = 2*w+2*h\n\n\n");
-        jScrollPane2.setViewportView(jTextArea1);
+        jTextPane1.setEditable(false);
+        jTextPane1.setText("A quad is one of the basic shapes in geometry. It is a polygon with four corners or vertices and four sides or edges which are line segments. The two opposite sides are equal. The adjacent two sides form a 90 degree angle.\nA quad of width w and height h. If w = h the quad is a square, otherwise it is a rectangular\n\nThe area of the quad \n\ta = w*h \nThe perimeter of the quad \n\tp = 2*w+2*h\n\n\n");
+        jScrollPane3.setViewportView(jTextPane1);
 
-        jPanel1.add(jScrollPane2);
+        jPanel1.add(jScrollPane3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -84,7 +81,7 @@ public class QuadInformation extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }

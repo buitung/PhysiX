@@ -31,8 +31,9 @@ public class PyramidInformation extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jLabel3 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
 
         jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel1.setText("Welcome to PhysiX");
@@ -47,14 +48,22 @@ public class PyramidInformation extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Pyramid is a structure whose shape is roughly that of a pyramid in the geometric sense. Its outer surfaces are triangular and converge to a single point at the top. The base of the pyramid described here is trilateral.\nA pyramid of three base sides: a, b and c, and the height of the pyramid h. \n\nLet s the half perimeter \n\ts = (a+b+c)/2.\nInradius of base is ir:\n\tir = SqrRoot( (s-a)*(s-b)*(s-c)/s )\nThe length of the side heigth is\n\tsh = SqrRoot(h^2 + ir^2) \nThe surface area of the pyramid is\n\tSurArea = baseArea + sidePerimeter*sh*0,5 \nThe  volume of the pyramid is\n\tv =  baseArea * h / 2\n");
-        jScrollPane2.setViewportView(jTextArea1);
+        jTextPane1.setEditable(false);
+        jTextPane1.setText("Pyramid is a structure whose shape is roughly that of a pyramid in the geometric sense. Its outer surfaces are triangular and converge to a single point at the top. The base of the pyramid described here is trilateral.\nA pyramid of three base sides: a, b and c, and the height of the pyramid h. \n\nLet s the half perimeter \n\ts = (a+b+c)/2.\nInradius of base is ir:\n\tir = SqrRoot( (s-a)*(s-b)*(s-c)/s )\nThe length of the side heigth is\n\tsh = SqrRoot(h^2 + ir^2) \nThe surface area of the pyramid is\n\tSurArea = baseArea + sidePerimeter*sh*0,5 \nThe  volume of the pyramid is\n\tv =  baseArea * h / 2\n");
+        jScrollPane3.setViewportView(jTextPane1);
 
-        jPanel1.add(jScrollPane2);
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -63,7 +72,7 @@ public class PyramidInformation extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addContainerGap())
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -83,8 +92,9 @@ public class PyramidInformation extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }
