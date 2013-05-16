@@ -5,6 +5,8 @@
 package UI.Panel.MainPanel;
 
 import PhysixLib.MathUtils;
+import UI.Panel.InforPanel.ProjectileInformation;
+import javax.swing.JFrame;
 
 /**
  *
@@ -107,6 +109,11 @@ public class Projectile extends javax.swing.JPanel {
 
         jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Information");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton3.setText("Deg/Rad");
@@ -244,6 +251,16 @@ public class Projectile extends javax.swing.JPanel {
         jLabel10.setText(Float.toString(pp.ProjTime()));
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        JFrame infoFr = new JFrame();
+        infoFr.setContentPane(new ProjectileInformation());
+        infoFr.pack();
+        infoFr.setVisible(true);
+        infoFr.setTitle("About Projectile");
+        infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

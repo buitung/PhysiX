@@ -5,6 +5,8 @@
 package UI.Panel.MainPanel;
 
 import PhysixLib.MathUtils;
+import UI.Panel.InforPanel.SideCalInformation;
+import javax.swing.JFrame;
 
 /**
  *
@@ -86,6 +88,11 @@ public class SideCalculation extends javax.swing.JPanel {
 
         jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton1.setText("Information");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Calculate");
@@ -209,6 +216,17 @@ public class SideCalculation extends javax.swing.JPanel {
         }
 
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        JFrame infoFr = new JFrame();
+        infoFr.setContentPane(new SideCalInformation());
+        infoFr.pack();
+        infoFr.setVisible(true);
+        infoFr.setTitle("About calculating side");
+        infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

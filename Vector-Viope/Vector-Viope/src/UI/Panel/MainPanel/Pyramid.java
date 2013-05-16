@@ -4,6 +4,9 @@
  */
 package UI.Panel.MainPanel;
 
+import UI.Panel.InforPanel.PyramidInformation;
+import javax.swing.JFrame;
+
 /**
  *
  * @author thanhtr
@@ -114,6 +117,11 @@ public class Pyramid extends javax.swing.JPanel {
 
         jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Information");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -150,7 +158,6 @@ public class Pyramid extends javax.swing.JPanel {
                                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel14)
-                                        .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(59, 59, 59)
@@ -225,6 +232,17 @@ public class Pyramid extends javax.swing.JPanel {
         jLabel12.setText(Float.toString(py.Volume()));
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        JFrame infoFr = new JFrame();
+        infoFr.setContentPane(new PyramidInformation());
+        infoFr.pack();
+        infoFr.setVisible(true);
+        infoFr.setTitle("About 4-face Pyramid");
+        infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

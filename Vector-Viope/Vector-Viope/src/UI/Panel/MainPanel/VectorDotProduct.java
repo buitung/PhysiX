@@ -4,6 +4,9 @@
  */
 package UI.Panel.MainPanel;
 
+import UI.Panel.InforPanel.VectorDotPInformation;
+import javax.swing.JFrame;
+
 /**
  *
  * @author thanhtr
@@ -97,6 +100,11 @@ public class VectorDotProduct extends javax.swing.JPanel {
 
         jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Information");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jTextField4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextField4.setText("  ");
@@ -212,6 +220,17 @@ public class VectorDotProduct extends javax.swing.JPanel {
                 Float.parseFloat(jTextField6.getText()));
         jLabel12.setText(Float.toString(v1.DotProduct(v2)));
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        JFrame infoFr = new JFrame();
+        infoFr.setContentPane(new VectorDotPInformation());
+        infoFr.pack();
+        infoFr.setVisible(true);
+        infoFr.setTitle("About calculating the Dot product between 2 Vectors");
+        infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

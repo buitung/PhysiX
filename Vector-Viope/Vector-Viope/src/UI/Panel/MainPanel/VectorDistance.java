@@ -4,6 +4,9 @@
  */
 package UI.Panel.MainPanel;
 
+import UI.Panel.InforPanel.VectorDistanceInformation;
+import javax.swing.JFrame;
+
 /**
  *
  * @author thanhtr
@@ -55,6 +58,11 @@ public class VectorDistance extends javax.swing.JPanel {
 
         jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Information");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton1.setText("Calculate");
@@ -219,6 +227,17 @@ public class VectorDistance extends javax.swing.JPanel {
         jLabel12.setText(Float.toString(v1.DistanceVec(v2)));
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        JFrame infoFr = new JFrame();
+        infoFr.setContentPane(new VectorDistanceInformation());
+        infoFr.pack();
+        infoFr.setVisible(true);
+        infoFr.setTitle("About calculating distance between 2 Vectors");
+        infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
