@@ -51,7 +51,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="DejaVu Sans" size="12" style="0"/>
+          <Font name="DejaVu Sans" size="12" style="2"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Welcome to PhysiX"/>
       </Properties>
@@ -59,7 +59,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="DejaVu Sans" size="12" style="0"/>
+          <Font name="DejaVu Sans" size="12" style="2"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Copyright by IPEramus 2013"/>
       </Properties>
@@ -73,6 +73,9 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Info"/>
           </Properties>
           <Events>
@@ -81,6 +84,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Add"/>
           </Properties>
           <Events>
@@ -89,6 +95,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton5">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Subtract"/>
           </Properties>
           <Events>
@@ -97,6 +106,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Multiply"/>
           </Properties>
           <Events>
@@ -105,6 +117,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Cross product"/>
           </Properties>
           <Events>
@@ -113,6 +128,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton6">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Dot product"/>
           </Properties>
           <Events>
@@ -121,6 +139,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton7">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Angle"/>
           </Properties>
           <Events>
@@ -129,6 +150,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton8">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Distance"/>
           </Properties>
           <Events>

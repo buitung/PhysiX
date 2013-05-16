@@ -48,10 +48,10 @@ public class Geo extends javax.swing.JPanel {
         jPanel2 = new javax.swing.JPanel();
         jButton8 = new javax.swing.JButton();
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel2.setText("Welcome to PhysiX");
 
-        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel3.setText("Copyright IPEramus 2013");
 
         jPanel1.setLayout(new java.awt.GridLayout(3, 2));
@@ -112,6 +112,7 @@ public class Geo extends javax.swing.JPanel {
 
         jPanel2.setLayout(new java.awt.GridLayout(1, 1));
 
+        jButton8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton8.setText("Back");
         jPanel2.add(jButton8);
 
@@ -125,7 +126,7 @@ public class Geo extends javax.swing.JPanel {
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 182, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 181, Short.MAX_VALUE)
                         .addComponent(jLabel3))
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())

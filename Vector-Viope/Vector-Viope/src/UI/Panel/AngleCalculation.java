@@ -44,24 +44,34 @@ public class AngleCalculation extends javax.swing.JPanel {
         jLabel10 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
 
+        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel1.setText("Welcome to PhysiX");
 
+        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel2.setText("Copyright IPEramus 2013");
 
+        jTextField1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextField1.setText("    ");
 
+        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel3.setText("Angle");
 
+        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel4.setText("Sin");
 
+        jLabel5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel5.setText("Cos");
 
+        jLabel6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel6.setText("Tan");
 
+        jLabel7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel7.setText("   ");
 
+        jLabel8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel8.setText("   ");
 
+        jLabel9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel9.setText("   ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -76,9 +86,8 @@ public class AngleCalculation extends javax.swing.JPanel {
                 .addGap(37, 37, 37)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -99,6 +108,7 @@ public class AngleCalculation extends javax.swing.JPanel {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
+        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton1.setText("Calculate");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,10 +116,13 @@ public class AngleCalculation extends javax.swing.JPanel {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Information");
 
+        jLabel10.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel10.setText("Degree");
 
+        jButton3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton3.setText("Degree/Radian");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,7 +156,7 @@ public class AngleCalculation extends javax.swing.JPanel {
                             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(1, 1, 1)))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

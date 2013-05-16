@@ -41,30 +41,40 @@ public class Circle extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel2.setText("Copyright by IPEramus 2013");
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel1.setText("Welcome to PhysiX");
 
+        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel3.setText("Radius");
 
+        jTextField1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextField1.setText("  ");
 
+        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel4.setText("m");
 
+        jLabel5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel5.setText("Circumference");
 
+        jLabel6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel6.setText("  ");
 
+        jLabel7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel7.setText("m");
 
+        jLabel8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel8.setText("Area");
 
+        jLabel9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel9.setText("  ");
 
+        jLabel10.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel10.setText("m^2");
 
+        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton1.setText("Calculate");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,6 +82,7 @@ public class Circle extends javax.swing.JPanel {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Information");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

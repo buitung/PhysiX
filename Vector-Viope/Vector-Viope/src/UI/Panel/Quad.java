@@ -47,22 +47,35 @@ public class Quad extends javax.swing.JPanel {
 
         jLabel6.setText("jLabel6");
 
+        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel3.setText("Width");
 
+        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel4.setText("Height");
 
+        jTextField1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+
+        jTextField2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+
+        jLabel5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel5.setText("m");
 
+        jLabel7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel7.setText("m");
 
+        jLabel8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel8.setText("Area");
 
+        jLabel9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel9.setText("Perimeter");
 
+        jLabel12.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel12.setText("m^2");
 
+        jLabel13.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel13.setText("m");
 
+        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Calculate");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,7 +83,12 @@ public class Quad extends javax.swing.JPanel {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton1.setText("Information");
+
+        jLabel14.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+
+        jLabel15.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -142,8 +160,10 @@ public class Quad extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel1.setText("Welcome to PhysiX");
 
+        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Copyright IPEramus 2013");
 

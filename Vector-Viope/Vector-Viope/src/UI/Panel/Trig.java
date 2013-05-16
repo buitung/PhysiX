@@ -43,10 +43,10 @@ public class Trig extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel1.setText("Welcome to PhysiX");
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel2.setText("Copyright by IPEramus 2013");
 
         jPanel1.setLayout(new java.awt.GridLayout(3, 1));
@@ -60,7 +60,7 @@ public class Trig extends javax.swing.JPanel {
         });
         jPanel1.add(jButton1);
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Side Calculation");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +69,7 @@ public class Trig extends javax.swing.JPanel {
         });
         jPanel1.add(jButton2);
 
+        jButton4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton4.setText("Back");
         jPanel1.add(jButton4);
 

@@ -48,7 +48,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="DejaVu Sans" size="12" style="0"/>
+          <Font name="DejaVu Sans" size="12" style="2"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Welcome to PhysiX"/>
       </Properties>
@@ -56,7 +56,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="DejaVu Sans" size="12" style="0"/>
+          <Font name="DejaVu Sans" size="12" style="2"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Copyright IPEramus 2013"/>

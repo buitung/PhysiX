@@ -41,14 +41,15 @@ public class Vector extends javax.swing.JPanel {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel1.setText("Welcome to PhysiX");
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel2.setText("Copyright by IPEramus 2013");
 
         jPanel1.setLayout(new java.awt.GridLayout(4, 2));
 
+        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton1.setText("Info");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,6 +58,7 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton1);
 
+        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Add");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,6 +67,7 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton2);
 
+        jButton5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton5.setText("Subtract");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +76,7 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton5);
 
+        jButton3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton3.setText("Multiply");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,6 +85,7 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton3);
 
+        jButton4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton4.setText("Cross product");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,6 +94,7 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton4);
 
+        jButton6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton6.setText("Dot product");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,6 +103,7 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton6);
 
+        jButton7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton7.setText("Angle");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,6 +112,7 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton7);
 
+        jButton8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton8.setText("Distance");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

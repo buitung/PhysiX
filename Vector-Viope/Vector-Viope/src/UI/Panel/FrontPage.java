@@ -49,10 +49,10 @@ public class FrontPage extends javax.swing.JPanel {
         setName("FrontPage"); // NOI18N
         setPreferredSize(new java.awt.Dimension(465, 450));
 
-        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel4.setText("Welcome to PhysiX");
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
         jLabel1.setText("Copyright by IPEramus 2013");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -78,9 +78,11 @@ public class FrontPage extends javax.swing.JPanel {
 
         jPanel2.setLayout(new java.awt.GridLayout(5, 1));
 
+        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton1.setText("Geometry");
         jPanel2.add(jButton1);
 
+        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Vector");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,9 +91,11 @@ public class FrontPage extends javax.swing.JPanel {
         });
         jPanel2.add(jButton2);
 
+        jButton3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton3.setText("Trigonometry");
         jPanel2.add(jButton3);
 
+        jButton4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton4.setText("Projectile");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,6 +104,7 @@ public class FrontPage extends javax.swing.JPanel {
         });
         jPanel2.add(jButton4);
 
+        jButton5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton5.setText("Quit");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
