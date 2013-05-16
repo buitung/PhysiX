@@ -49,6 +49,7 @@ public class CircleInformation extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1);
 
         jTextPane1.setEditable(false);
+        jTextPane1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextPane1.setText("A circle is a set of points in a plane that are a given distance from a given point, the center. The distance between any of the points and the center is called the radius.\nA circle of radius r \n\nThe circumference of the circle:\n \tc = 2*pi*r\nThe area of the circle:\n \ta = pi*r^2\n\n");
         jScrollPane3.setViewportView(jTextPane1);
 

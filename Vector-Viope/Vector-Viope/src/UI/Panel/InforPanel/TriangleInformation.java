@@ -48,7 +48,7 @@ public class TriangleInformation extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1);
 
         jTextPane1.setEditable(false);
-        jTextPane1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextPane1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextPane1.setText("A triangle is one of the basic shapes in geometry. It is a polygon with three corners or vertices and three sides or edges which are line segments.\nA triangle of  three sides : a, b and c. \n\nThe perimeter of the triangle\n\tp = a+b+c\nThe area of the triangle \n\ta = SqrRoot( p*(p-a)*(p-b)*(p-c) )\n");
         jScrollPane3.setViewportView(jTextPane1);
 

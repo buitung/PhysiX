@@ -87,7 +87,7 @@
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="14" style="0"/>
+                  <Font name="DejaVu Sans" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="A triangle is one of the basic shapes in geometry. It is a polygon with three corners or vertices and three sides or edges which are line segments.&#xa;A triangle of  three sides : a, b and c. &#xa;&#xa;The perimeter of the triangle&#xa;&#x9;p = a+b+c&#xa;The area of the triangle &#xa;&#x9;a = SqrRoot( p*(p-a)*(p-b)*(p-c) )&#xa;"/>
               </Properties>

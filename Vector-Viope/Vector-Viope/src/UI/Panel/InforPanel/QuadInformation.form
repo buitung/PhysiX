@@ -86,6 +86,9 @@
             <Component class="javax.swing.JTextPane" name="jTextPane1">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="DejaVu Sans" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="A quad is one of the basic shapes in geometry. It is a polygon with four corners or vertices and four sides or edges which are line segments. The two opposite sides are equal. The adjacent two sides form a 90 degree angle.&#xa;A quad of width w and height h. If w = h the quad is a square, otherwise it is a rectangular&#xa;&#xa;The area of the quad &#xa;&#x9;a = w*h &#xa;The perimeter of the quad &#xa;&#x9;p = 2*w+2*h&#xa;&#xa;&#xa;"/>
               </Properties>
             </Component>

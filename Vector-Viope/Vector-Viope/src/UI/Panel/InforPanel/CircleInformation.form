@@ -87,6 +87,9 @@
             <Component class="javax.swing.JTextPane" name="jTextPane1">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="DejaVu Sans" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="A circle is a set of points in a plane that are a given distance from a given point, the center. The distance between any of the points and the center is called the radius.&#xa;A circle of radius r &#xa;&#xa;The circumference of the circle:&#xa; &#x9;c = 2*pi*r&#xa;The area of the circle:&#xa; &#x9;a = pi*r^2&#xa;&#xa;"/>
               </Properties>
             </Component>

@@ -48,7 +48,7 @@ public class SphereInformation extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1);
 
         jTextPane1.setEditable(false);
-        jTextPane1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextPane1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextPane1.setText("A sphere is a perfectly round geometrical and circular object in three-dimensional space.\nA sphere of radius r . \n\nThe surface area of the sphere \n\ta = 4*pi*r^2.\n The volume of the sphere \n\tv = 4*pi*r^3 /3.\n");
         jScrollPane3.setViewportView(jTextPane1);
 

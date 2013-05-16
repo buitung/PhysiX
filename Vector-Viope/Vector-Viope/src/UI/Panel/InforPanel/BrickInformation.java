@@ -54,6 +54,7 @@ public class BrickInformation extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1);
 
         jTextPane1.setEditable(false);
+        jTextPane1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextPane1.setText("A brick is a cubic object in geometry. It has twelve edges, eight corners and six faces.\nA brick has width w, height h and length l.\n\nThe surface area of the brick is: \n\ta = 2*w*h + 2*w*l + 2*h*l\nThe  volume of the brick is:\n\tv = w*h*l\n");
         jScrollPane4.setViewportView(jTextPane1);
 

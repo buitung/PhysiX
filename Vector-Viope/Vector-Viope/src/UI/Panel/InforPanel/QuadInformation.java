@@ -48,6 +48,7 @@ public class QuadInformation extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1);
 
         jTextPane1.setEditable(false);
+        jTextPane1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextPane1.setText("A quad is one of the basic shapes in geometry. It is a polygon with four corners or vertices and four sides or edges which are line segments. The two opposite sides are equal. The adjacent two sides form a 90 degree angle.\nA quad of width w and height h. If w = h the quad is a square, otherwise it is a rectangular\n\nThe area of the quad \n\ta = w*h \nThe perimeter of the quad \n\tp = 2*w+2*h\n\n\n");
         jScrollPane3.setViewportView(jTextPane1);
 
