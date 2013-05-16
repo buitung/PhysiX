@@ -7,6 +7,7 @@ package UI;
 import UI.Panel.FrontPage;
 import UI.Panel.Geo;
 import UI.Panel.Trig;
+import UI.Panel.Vector;
 import java.awt.CardLayout;
 import java.awt.SplashScreen;
 import javax.swing.*;
@@ -42,13 +43,16 @@ public final class MainUI extends JFrame {
         FrontPage frontP = new FrontPage(this);
         Geo geoP = new Geo(this);
         Trig trigP = new Trig(this);
+        Vector vecP = new Vector(this);
         JPanel cards = new JPanel(new CardLayout());
         cards.add(frontP, "Front Page");
         cards.add(geoP, "Geo Page");
         cards.add(trigP, "Trig Page");
+        cards.add(vecP,"Vec Page");
         frontP.setActionToPerform(cards);
         geoP.setActionToPerform(cards);
         trigP.setActionToPerform(cards);
+        vecP.setActionToPerform(cards);
         //cards.add(cards)
         add(cards);
         pack();

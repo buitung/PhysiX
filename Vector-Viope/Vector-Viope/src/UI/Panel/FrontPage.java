@@ -20,11 +20,12 @@ public class FrontPage extends javax.swing.JPanel {
     /**
      * Creates new form FrontPage
      */
-    private MainUI mainUI; 
+    private MainUI mainUI;
+
     public FrontPage(MainUI mainUI) {
         this.mainUI = mainUI;
         initComponents();
-        
+
     }
 
     /**
@@ -73,7 +74,7 @@ public class FrontPage extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         jPanel2.setLayout(new java.awt.GridLayout(5, 1));
@@ -84,11 +85,6 @@ public class FrontPage extends javax.swing.JPanel {
 
         jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jButton2.setText("Vector");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
         jPanel2.add(jButton2);
 
         jButton3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
@@ -130,7 +126,7 @@ public class FrontPage extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -139,17 +135,6 @@ public class FrontPage extends javax.swing.JPanel {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        JFrame fr = new JFrame();
-        fr.setTitle("Vector");
-        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        fr.setContentPane(new Vector());
-        fr.setLocationRelativeTo(mainUI);
-        fr.pack();
-        fr.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
@@ -170,6 +155,7 @@ public class FrontPage extends javax.swing.JPanel {
             public void actionPerformed(ActionEvent e) {
                 CardLayout cl = (CardLayout) c.getLayout();
                 cl.show(c, "Geo Page");
+                mainUI.setTitle("Geometry page");
             }
         });
         jButton3.addActionListener(new ActionListener() {
@@ -177,8 +163,19 @@ public class FrontPage extends javax.swing.JPanel {
             public void actionPerformed(ActionEvent e) {
                 CardLayout cl = (CardLayout) c.getLayout();
                 cl.show(c, "Trig Page");
+                mainUI.setTitle("Trigonometry page");
             }
         });
+        jButton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CardLayout cl = (CardLayout) c.getLayout();
+                cl.show(c, "Vec Page");
+                mainUI.setTitle("Vector page");
+            }
+        });
+
+
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

@@ -225,6 +225,7 @@ public class Geo extends javax.swing.JPanel {
             public void actionPerformed(ActionEvent e) {
                 CardLayout cl = (CardLayout) c.getLayout();
                 cl.show(c, "Front Page");
+                mainUI.setTitle("Front page");
             }
         });
     }

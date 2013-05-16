@@ -4,7 +4,12 @@
  */
 package UI.Panel;
 
+import UI.MainUI;
+import java.awt.CardLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -15,8 +20,10 @@ public class Vector extends javax.swing.JPanel {
     /**
      * Creates new form Vector
      */
+    private MainUI mainUI;
 
-    public Vector() {
+    public Vector(MainUI mainUI) {
+        this.mainUI = mainUI;
         initComponents();
     }
 
@@ -168,6 +175,18 @@ public class Vector extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    public void setActionToPerform(JPanel cards) {
+        final JPanel c = cards;
+        jButton9.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                CardLayout cl = (CardLayout) c.getLayout();
+                cl.show(c, "Front Page");
+                mainUI.setTitle("Front Page");
+            }
+        });
+    }
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
@@ -185,7 +204,7 @@ public class Vector extends javax.swing.JPanel {
         fr.setTitle("Adding two Vectors");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         fr.setContentPane(new VectorAdd());
-        fr.setLocationRelativeTo(this);
+        fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -196,7 +215,7 @@ public class Vector extends javax.swing.JPanel {
         fr.setTitle("Subtracting two Vectors");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         fr.setContentPane(new VectorSubtract());
-        fr.setLocationRelativeTo(this);
+        fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
 
@@ -208,7 +227,7 @@ public class Vector extends javax.swing.JPanel {
         fr.setTitle("Vector Product");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         fr.setContentPane(new VectorMultiplication());
-        fr.setLocationRelativeTo(this);
+        fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -219,7 +238,7 @@ public class Vector extends javax.swing.JPanel {
         fr.setTitle("Vector cross product");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         fr.setContentPane(new VectorCrossProduct());
-        fr.setLocationRelativeTo(this);
+        fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -230,7 +249,7 @@ public class Vector extends javax.swing.JPanel {
         fr.setTitle("Vector Dot Product");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         fr.setContentPane(new VectorDotProduct());
-        fr.setLocationRelativeTo(this);
+        fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
     }//GEN-LAST:event_jButton6ActionPerformed
@@ -241,7 +260,7 @@ public class Vector extends javax.swing.JPanel {
         fr.setTitle("Angle between two Vectors");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         fr.setContentPane(new VectorAngle());
-        fr.setLocationRelativeTo(this);
+        fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
@@ -252,7 +271,7 @@ public class Vector extends javax.swing.JPanel {
         fr.setTitle("Distance between two Vectors");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         fr.setContentPane(new VectorDistance());
-        fr.setLocationRelativeTo(this);
+        fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
     }//GEN-LAST:event_jButton8ActionPerformed

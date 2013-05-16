@@ -4,6 +4,12 @@
  */
 package UI.Panel;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author duyb
@@ -15,8 +21,20 @@ public class VectorInfoInformation extends javax.swing.JPanel {
      */
     public VectorInfoInformation() {
         initComponents();
+        setTextInfo();
     }
 
+    public void setTextInfo(){
+        try {
+            Scanner s = new Scanner(new File("vectorinfo.txt"));
+            while (s.hasNext()){
+                jTextArea1.append(s.nextLine());
+            }
+            s.close();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(VectorInfoInformation.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
