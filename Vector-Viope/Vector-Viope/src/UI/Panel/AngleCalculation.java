@@ -200,13 +200,60 @@ public class AngleCalculation extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        double ee = 0.0001;
         double ang = Double.parseDouble(jTextField1.getText());
         if (jLabel10.getText().equalsIgnoreCase("Degree")) {
-            ang = MathUtils.Deg2Rad((float)ang);
+            ang = MathUtils.Deg2Rad((float) ang);
         }
-        jLabel7.setText(Double.toString(Math.sin(ang)).substring(0, 6));
-        jLabel8.setText(Double.toString(Math.cos(ang)).substring(0, 6));
-        jLabel9.setText(Double.toString(Math.tan(ang)).substring(0, 6));
+        //double s = Math.sin(ang);
+        //double c = Math.cos(ang);
+        //double t = Math.tan(ang);
+        if (Double.toString(Math.sin(ang)).length() > 6) {
+            double s = Double.parseDouble(Double.toString(Math.sin(ang)).substring(0, 6));
+            if (s + ee >= 1.0) {
+                s = 1.0;
+            }
+            if (s < ee) {
+                s = 0.0;
+            }
+            if (s - ee <= -1.0) {
+                s = -1.0;
+            }
+            jLabel7.setText(Double.toString(s));
+        } else {
+            jLabel7.setText(Double.toString(Math.sin(ang)));
+        }
+        if (Double.toString(Math.cos(ang)).length() > 6) {
+            double c = Double.parseDouble(Double.toString(Math.cos(ang)).substring(0, 6));
+            if (c + ee >= 1.0) {
+                c = 1.0;
+            }
+            if (c < ee) {
+                c = 0.0;
+            }
+            if (c - ee <= -1.0) {
+                c = -1.0;
+            }
+            jLabel8.setText(Double.toString(c));
+        } else {
+            jLabel8.setText(Double.toString(Math.cos(ang)));
+        }
+        if (Double.toString(Math.tan(ang)).length() > 6) {
+            double t = Double.parseDouble(Double.toString(Math.tan(ang)).substring(0, 6));
+            if (t + ee >= Math.ceil(t)) {
+                t = Math.ceil(t);
+            }
+            if (t < ee) {
+                t = 0.0;
+            }
+            if (t - ee <= Math.floor(t)) {
+                t = Math.floor(t);
+            }
+
+            jLabel9.setText(Double.toString(t));
+        } else {
+            jLabel9.setText(Double.toString(Math.tan(ang)));
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
