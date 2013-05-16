@@ -108,7 +108,7 @@
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
+                      <Font name="DejaVu Sans" size="12" style="0"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Vector is a geometric object that has magnitude (or length) and direction and can be added to other vectors according to vector algebra; it is frequently represented by a line segment with a definite direction, or graphically as an arrow, connecting an initial point A with a terminal point B.&#xa;&#xa;Assume now that a and b are not necessarily equal vectors, but that they may have different magnitudes and directions.&#xa;&#x9;a = a1.i + a2.j + a3.k&#xa;&#x9;b = b1.i + b2.j + b3.k&#xa;&#xa;The dot product of a and b is&#xa;&#x9;a.b = a1*b1 + a2*b2 + a3*b3"/>
                   </Properties>

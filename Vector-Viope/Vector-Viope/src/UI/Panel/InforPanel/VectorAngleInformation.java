@@ -49,7 +49,7 @@ public class VectorAngleInformation extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1);
 
         jTextPane1.setEditable(false);
-        jTextPane1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextPane1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextPane1.setText("Vector is a geometric object that has magnitude (or length) and direction and can be added to other vectors according to vector algebra; it is frequently represented by a line segment with a definite direction, or graphically as an arrow, connecting an initial point A with a terminal point B.\n\nAssume now that a and b are not necessarily equal vectors, but that they may have different magnitudes and directions.\n\nAngle \"alpha\" between two vector can be decided as\n\tcos(\"alpha\") = (a.b) / (|a|.|b|)");
         jScrollPane2.setViewportView(jTextPane1);
 
@@ -57,7 +57,7 @@ public class VectorAngleInformation extends javax.swing.JPanel {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

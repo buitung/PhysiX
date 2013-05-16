@@ -109,7 +109,7 @@
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
+                      <Font name="DejaVu Sans" size="12" style="0"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="In geometry, an angle is the figure formed by two rays, called the sides of the angle, sharing a common endpoint, called the vertex of the angle.Angle can be measure in degree or in radian. &#xa;Radian describes the plane angle subtended by a circular arc as the length of the arc divided by the radius of the arc. One radian is the angle subtended at the center of a circle by an arc that is equal in length to the radius of the circle.&#xa;&#xa;The conversion between angle in degree and in radian:&#xa;&#x9;angle_in_degree =  angle_in_radian * 180(degree) / pi&#xa;&#xa;Take into account one corner in a right triangle with hypotenuse, opposite and adjacent sides&#xa;Sine, Cosine and Tangent of one angle are trigonometric functions, putting in the above context:&#xa;&#x9;Sin = Opp/Hypo&#xa;&#x9;Cos = Adj/Hypo&#xa;&#x9;Tan = Opp/ Adj = Sin/Cos&#xa;"/>
                   </Properties>

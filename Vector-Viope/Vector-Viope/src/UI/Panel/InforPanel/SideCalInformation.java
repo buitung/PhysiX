@@ -49,7 +49,7 @@ public class SideCalInformation extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1);
 
         jTextPane1.setEditable(false);
-        jTextPane1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextPane1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jTextPane1.setText("In geometry, an angle is the figure formed by two rays, called the sides of the angle, sharing a common endpoint, called the vertex of the angle.Angle can be measure in degree or in radian. \nRadian describes the plane angle subtended by a circular arc as the length of the arc divided by the radius of the arc. One radian is the angle subtended at the center of a circle by an arc that is equal in length to the radius of the circle.\n\nThe conversion between angle in degree and in radian:\n\tangle_in_degree =  angle_in_radian * 180(degree) / pi\n\nTake into account one corner in a right triangle with hypotenuse, opposite and adjacent sides\nHypotenuse is a longest side.\n\nThe side next to the angle and not hypotenuse is adjacent side:\n\tAdj = Hypo * Cos\n\nThe side opposite to the angle is opposite side\n\tOpp = Hypo * Sin\n");
         jScrollPane2.setViewportView(jTextPane1);
 
