@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package UI.Panel;
+package UI.Panel.MainPanel;
 
 import UI.MainUI;
 import java.awt.CardLayout;
@@ -13,16 +13,16 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author thanhtr
+ * @author DuyTung
  */
-public class Vector extends javax.swing.JPanel {
+public class Geo extends javax.swing.JPanel {
 
     /**
-     * Creates new form Vector
+     * Creates new form Geo
      */
     private MainUI mainUI;
 
-    public Vector(MainUI mainUI) {
+    public Geo(MainUI mainUI) {
         this.mainUI = mainUI;
         initComponents();
     }
@@ -36,30 +36,28 @@ public class Vector extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jButton9 = new javax.swing.JButton();
-
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel1.setText("Welcome to PhysiX");
+        jButton8 = new javax.swing.JButton();
 
         jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel2.setText("Copyright by IPEramus 2013");
+        jLabel2.setText("Welcome to PhysiX");
 
-        jPanel1.setLayout(new java.awt.GridLayout(4, 2));
+        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        jLabel3.setText("Copyright IPEramus 2013");
+
+        jPanel1.setLayout(new java.awt.GridLayout(3, 2));
 
         jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton1.setText("Info");
+        jButton1.setText("Triangle");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -68,7 +66,7 @@ public class Vector extends javax.swing.JPanel {
         jPanel1.add(jButton1);
 
         jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton2.setText("Add");
+        jButton2.setText("Brick");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -76,17 +74,8 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton2);
 
-        jButton5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton5.setText("Subtract");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton5);
-
         jButton3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton3.setText("Multiply");
+        jButton3.setText("Quad");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -95,7 +84,7 @@ public class Vector extends javax.swing.JPanel {
         jPanel1.add(jButton3);
 
         jButton4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton4.setText("Cross product");
+        jButton4.setText("Sphere");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -103,8 +92,17 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton4);
 
+        jButton5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        jButton5.setText("Circle");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5);
+
         jButton6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton6.setText("Dot product");
+        jButton6.setText("Pyramid");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -112,159 +110,125 @@ public class Vector extends javax.swing.JPanel {
         });
         jPanel1.add(jButton6);
 
-        jButton7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton7.setText("Angle");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton7);
+        jPanel2.setLayout(new java.awt.GridLayout(1, 1));
 
         jButton8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton8.setText("Distance");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton8);
-
-        jPanel2.setLayout(new java.awt.GridLayout());
-
-        jButton9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton9.setText("BACK");
-        jPanel2.add(jButton9);
+        jButton8.setText("Back");
+        jPanel2.add(jButton8);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(86, 86, 86)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(16, 16, 16))
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 181, Short.MAX_VALUE)
+                        .addComponent(jLabel3))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(jLabel3)
                     .addComponent(jLabel2))
+                .addGap(35, 35, 35)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 308, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 57, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    public void setActionToPerform(JPanel cards) {
-        final JPanel c = cards;
-        jButton9.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ae) {
-                CardLayout cl = (CardLayout) c.getLayout();
-                cl.show(c, "Front Page");
-                mainUI.setTitle("Front Page");
-            }
-        });
-    }
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
-        fr.setTitle("Vector Information");
+        fr.setTitle("Triangle");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        fr.setContentPane(new VectorInfo());
-        fr.setLocationRelativeTo(this);
+        fr.setContentPane(new Triangle());
+        fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
-        fr.setTitle("Adding two Vectors");
+        fr.setTitle("Brick");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        fr.setContentPane(new VectorAdd());
+        fr.setContentPane(new Brick());
         fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
+
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Quad");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Quad());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        JFrame fr = new JFrame();
+        fr.setTitle("Sphere");
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fr.setContentPane(new Sphere());
+        fr.setLocationRelativeTo(mainUI);
+        fr.pack();
+        fr.setVisible(true);
+
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
-        fr.setTitle("Subtracting two Vectors");
+        fr.setTitle("Circle");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        fr.setContentPane(new VectorSubtract());
+        fr.setContentPane(new Circle());
         fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
 
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        JFrame fr = new JFrame();
-        fr.setTitle("Vector Product");
-        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        fr.setContentPane(new VectorMultiplication());
-        fr.setLocationRelativeTo(mainUI);
-        fr.pack();
-        fr.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        JFrame fr = new JFrame();
-        fr.setTitle("Vector cross product");
-        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        fr.setContentPane(new VectorCrossProduct());
-        fr.setLocationRelativeTo(mainUI);
-        fr.pack();
-        fr.setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
-
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
-        fr.setTitle("Vector Dot Product");
+        fr.setTitle("Pyramid");
         fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        fr.setContentPane(new VectorDotProduct());
+        fr.setContentPane(new Pyramid());
         fr.setLocationRelativeTo(mainUI);
         fr.pack();
         fr.setVisible(true);
+
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-        JFrame fr = new JFrame();
-        fr.setTitle("Angle between two Vectors");
-        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        fr.setContentPane(new VectorAngle());
-        fr.setLocationRelativeTo(mainUI);
-        fr.pack();
-        fr.setVisible(true);
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-        JFrame fr = new JFrame();
-        fr.setTitle("Distance between two Vectors");
-        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        fr.setContentPane(new VectorDistance());
-        fr.setLocationRelativeTo(mainUI);
-        fr.pack();
-        fr.setVisible(true);
-    }//GEN-LAST:event_jButton8ActionPerformed
+    public void setActionToPerform(JPanel cards) {
+        final JPanel c = cards;
+        jButton8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CardLayout cl = (CardLayout) c.getLayout();
+                cl.show(c, "Front Page");
+                mainUI.setTitle("Front page");
+            }
+        });
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -272,11 +236,9 @@ public class Vector extends javax.swing.JPanel {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

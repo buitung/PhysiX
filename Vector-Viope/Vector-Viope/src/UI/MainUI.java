@@ -4,10 +4,10 @@
  */
 package UI;
 
-import UI.Panel.FrontPage;
-import UI.Panel.Geo;
-import UI.Panel.Trig;
-import UI.Panel.Vector;
+import UI.Panel.MainPanel.FrontPage;
+import UI.Panel.MainPanel.Geo;
+import UI.Panel.MainPanel.Trig;
+import UI.Panel.MainPanel.Vector;
 import java.awt.CardLayout;
 import java.awt.SplashScreen;
 import javax.swing.*;
