@@ -213,10 +213,17 @@ public class VectorMultiplication extends javax.swing.JPanel {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try {
+            float z1;
+            if (jTextField3.getText().trim().length() == 0) {
+                z1 = 0;
+                jTextField3.setText("0");
+            } else {
+                z1 = Float.parseFloat(jTextField3.getText());
+            }
             PhysixLib.Vector v1 = new PhysixLib.Vector(
                     Float.parseFloat(jTextField1.getText()),
                     Float.parseFloat(jTextField2.getText()),
-                    Float.parseFloat(jTextField3.getText()));
+                    z1);
             float h = Float.parseFloat(jTextField4.getText());
             v1.Product(h);
             jLabel18.setText(Float.toString(v1.getX()));

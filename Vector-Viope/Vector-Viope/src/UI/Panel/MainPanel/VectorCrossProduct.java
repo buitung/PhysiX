@@ -253,14 +253,27 @@ public class VectorCrossProduct extends javax.swing.JPanel {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try {
+            float z1, z2;
+            if (jTextField3.getText().trim().length() == 0) {
+                z1 = 0;
+                jTextField3.setText("0");
+            } else {
+                z1 = Float.parseFloat(jTextField3.getText());
+            }
+            if (jTextField6.getText().trim().length() == 0) {
+                z2 = 0;
+                jTextField6.setText("0");
+            } else {
+                z2 = Float.parseFloat(jTextField6.getText());
+            }
             PhysixLib.Vector v1 = new PhysixLib.Vector(
                     Float.parseFloat(jTextField1.getText()),
                     Float.parseFloat(jTextField2.getText()),
-                    Float.parseFloat(jTextField3.getText()));
+                    z1);
             PhysixLib.Vector v2 = new PhysixLib.Vector(
                     Float.parseFloat(jTextField4.getText()),
                     Float.parseFloat(jTextField5.getText()),
-                    Float.parseFloat(jTextField6.getText()));
+                    z2);
 
             PhysixLib.Vector v3 = v1.CrossProduct(v2);
             jLabel15.setText(Float.toString(v3.getX()));
