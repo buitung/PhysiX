@@ -108,7 +108,7 @@
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
+                      <Font name="DejaVu Sans" size="12" style="0"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="A projectile is any object projected into space by the exertion of a force. The projectile described here is that an object is projected upward with an angle with the horizontal line. &#xa;The projected object of velocity v of and the angle &quot;alpha&quot; with the horizontal line.&#xa;Gravity acceleration g = 9.8 m/s^2 &#xa;&#xa;The projectile maximum traveil distance is &#xa;&#x9;d = v*v*sin(2*alpha)/g. &#xa;&#xa;The projectile total air time is &#xa;&#x9;t = 2*v*sin(alpha)/g. &#xa;&#xa;The projectile maimum achieve height is &#xa;&#x9;h = v*v*sin(alpha)*sin(alpha)/(2*g).&#xa;"/>
                   </Properties>
