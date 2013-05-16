@@ -231,9 +231,7 @@ public class VectorInfo extends javax.swing.JPanel {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         JFrame infoFr = new JFrame();
-        VectorInfoInformation vii = new VectorInfoInformation();
-        
-        infoFr.setContentPane(vii);
+        infoFr.setContentPane(new VectorInfoInformation());
         infoFr.pack();
         infoFr.setVisible(true);
         infoFr.setTitle("About Vector Information");

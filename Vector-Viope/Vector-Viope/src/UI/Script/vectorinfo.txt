@@ -1,7 +1,0 @@
-Vector is a geometric object that has magnitude (or length) and direction and can be added to other vectors according to vector algebra; it is frequently represented by a line segment with a definite direction, or graphically as an arrow, connecting an initial point A with a terminal point B.
-Assume now that a is a vector
-a = a1.i + a2.j + a3.k
-Magnitude of vector a is: 
-Mag_a = SqrRoot( a1^2 + a2^2 + a3^2 )
-Normalized vector of a is:
-Norm_a = (a1/Mag_a)i + (a2/Mag_a)j + (a3/Mag_a)k
