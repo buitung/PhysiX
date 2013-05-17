@@ -23,13 +23,17 @@ public class Projectile {
     }
 
     public float Distance() {
-
-        return (float)Math.pow(velocity, 2)*(float)Math.sin(2*angle)/g;
+        float ss;
+        if (angle == 0 || angle == MathUtils.Deg2Rad(180)) {
+            ss = 0;
+        } else {
+            ss = (float) Math.sin(2 * angle);
+        }
+        return (float) Math.pow(velocity, 2) * ss / g;
     }
 
     public float Height() {
-        return (float)Math.pow(velocity, 2)*
-                (float)Math.pow((float)Math.sin(angle),2)/(2*g);
+        return (float) Math.pow(velocity, 2)
+                * (float) Math.pow((float) Math.sin(angle), 2) / (2 * g);
     }
-
 }

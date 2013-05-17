@@ -18,6 +18,7 @@ public class Projectile extends javax.swing.JPanel {
     /**
      * Creates new form Projectile
      */
+
     public Projectile() {
         initComponents();
     }
@@ -240,8 +241,8 @@ public class Projectile extends javax.swing.JPanel {
                             MathUtils.Rag2Deg(Float.parseFloat(jTextField1.getText()))));
                 }
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(this, 
-                        "Please enter the angle and the velocity in the right form");
+                JOptionPane.showMessageDialog(this,
+                        "Please enter the angle in the right form");
             }
         } else {
             if (jLabel12.getText().equalsIgnoreCase("Degree")) {
@@ -256,22 +257,46 @@ public class Projectile extends javax.swing.JPanel {
         // TODO add your handling code here:
         try {
             float velocity = Float.parseFloat(jTextField2.getText());
-            if (velocity<0) throw new ArithmeticException();
+            if (velocity < 0) {
+                throw new ArithmeticException();
+            }
             float ang = Float.parseFloat(jTextField1.getText());
             if (jLabel12.getText().equalsIgnoreCase("Degree")) {
                 ang = MathUtils.Deg2Rad(ang);
             }
+            if (ang < 0 || ang > (float) Math.PI) {
+                throw new NullPointerException();
+            }
+            if (ang == (float) Math.PI) {
+                ang = 0;
+            }
             PhysixLib.Projectile pp = new PhysixLib.Projectile(velocity, ang);
-            jLabel8.setText(Float.toString(pp.Distance()));
-            jLabel9.setText(Float.toString(pp.Height()));
-            jLabel10.setText(Float.toString(pp.ProjTime()));
-        } catch (ArithmeticException e){
-            JOptionPane.showMessageDialog(this, 
+            if (Math.abs(pp.Distance()) > 0.001) {
+                jLabel8.setText(Float.toString(pp.Distance()));
+            } else {
+                jLabel8.setText("0");
+            }
+            if (pp.Height() > (float) 0.001) {
+                jLabel9.setText(Float.toString(pp.Height()));
+            } else {
+                jLabel9.setText("0");
+            }
+            if (pp.ProjTime() > (float) 0.001) {
+                jLabel10.setText(Float.toString(pp.ProjTime()));
+            } else {
+                jLabel10.setText("0");
+            }
+        } catch (ArithmeticException e) {
+            JOptionPane.showMessageDialog(this,
                     "The velocity must be higher or equal zero.\n"
                     + "Please enter the velocity in the right form");
-        } 
-        catch (Exception e) {
-            JOptionPane.showMessageDialog(this, 
+        } catch (NullPointerException e) {
+            JOptionPane.showMessageDialog(this,
+                    "The angle must be higher or equal zero as well as lower or equal 180 degree / PI rad.\n"
+                    + "Please enter the velocity in the right form");
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,
                     "Please enter the angle and the velocity in the right form");
             jLabel8.setText("");
             jLabel9.setText("");
