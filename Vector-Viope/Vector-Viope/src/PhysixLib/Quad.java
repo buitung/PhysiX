@@ -15,10 +15,12 @@ public class Quad {
         this.height = height;
     }
     
+    //Returns the float value of the area of the quad
     public float Area(){
         return width*height;
     }
     
+    //Returns the float value of the perimeter of the quad
     public float Perimeter(){
         return 2*(width+height);
     }

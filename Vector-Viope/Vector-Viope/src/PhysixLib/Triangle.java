@@ -17,10 +17,12 @@ public class Triangle {
         this.c = c;
     }
     
+    //Returns the float value of the perimeter of the triangle
     public float Perimeter(){
         return a+b+c;
     }
     
+    //Returns the float value of the area of the triangle
     public float Area(){
         float p = Perimeter();
         return (float)Math.sqrt(p*(p-a)*(p-b)*(p-c));
