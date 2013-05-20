@@ -210,9 +210,9 @@ public class Brick extends javax.swing.JPanel {
             PhysixLib.Brick br = new PhysixLib.Brick(Float.parseFloat(jTextField1.getText().toString()),
                     Float.parseFloat(jTextField2.getText().toString()),
                     Float.parseFloat(jTextField3.getText().toString()));
-            if (Float.parseFloat(jTextField1.getText().toString())<=0 ||
-                    Float.parseFloat(jTextField2.getText().toString()) <=0 ||
-                    Float.parseFloat(jTextField3.getText().toString()) <= 0) {
+            if (Float.parseFloat(jTextField1.getText().toString()) <= 0
+                    || Float.parseFloat(jTextField2.getText().toString()) <= 0
+                    || Float.parseFloat(jTextField3.getText().toString()) <= 0) {
                 throw new ArithmeticException();
             }
             jLabel11.setText(Float.toString(br.Area()));

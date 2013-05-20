@@ -22,6 +22,10 @@ public class Geo extends javax.swing.JPanel {
      */
     private MainUI mainUI;
 
+    /**
+     *
+     * @param mainUI
+     */
     public Geo(MainUI mainUI) {
         this.mainUI = mainUI;
         initComponents();
@@ -218,6 +222,10 @@ public class Geo extends javax.swing.JPanel {
 
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    /**
+     *
+     * @param cards
+     */
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;
         jButton8.addActionListener(new ActionListener() {

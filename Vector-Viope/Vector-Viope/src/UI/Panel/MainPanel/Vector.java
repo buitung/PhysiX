@@ -22,6 +22,10 @@ public class Vector extends javax.swing.JPanel {
      */
     private MainUI mainUI;
 
+    /**
+     *
+     * @param mainUI
+     */
     public Vector(MainUI mainUI) {
         this.mainUI = mainUI;
         initComponents();
@@ -165,6 +169,10 @@ public class Vector extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     *
+     * @param cards
+     */
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;
         jButton9.addActionListener(new ActionListener() {

@@ -272,7 +272,7 @@ public class Projectile extends javax.swing.JPanel {
             }
             PhysixLib.Projectile pp = new PhysixLib.Projectile(velocity, ang);
             if (Math.abs(pp.Distance()) > 0.001) {
-                jLabel8.setText(Float.toString(pp.Distance()));
+                jLabel8.setText(Float.toString((float)Math.abs(pp.Distance())));
             } else {
                 jLabel8.setText("0");
             }
