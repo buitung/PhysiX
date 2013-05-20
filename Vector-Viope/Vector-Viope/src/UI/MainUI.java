@@ -18,6 +18,9 @@ import javax.swing.*;
  */
 public final class MainUI extends JFrame {
 
+    /**
+     * Main frame
+     */
     public MainUI() {
         setSplashScreen();
         addToContentPane();
@@ -27,6 +30,9 @@ public final class MainUI extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * Splash screen and "loading" time
+     */
     public void setSplashScreen() {
         final SplashScreen splash = SplashScreen.getSplashScreen();
         if (splash != null) {
@@ -38,6 +44,9 @@ public final class MainUI extends JFrame {
         }
     }
 
+    /**
+     * Add frontpage to frame
+     */
     public void addToContentPane() {
         setTitle("Front Page");
         FrontPage frontP = new FrontPage(this);
@@ -59,6 +68,11 @@ public final class MainUI extends JFrame {
 
     }
 
+    /**
+     *
+     * @param args
+     * Main function
+     */
     public static void main(String[] args) {
         //Set the Nimbus look and feel
         try {

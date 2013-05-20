@@ -13,6 +13,14 @@ public class Pyramid {
     private float baseside1, baseside2, baseside3, height;
     private Triangle t;
 
+    /**
+     *
+     * @param baseside1 base-side
+     * @param baseside2 base-side
+     * @param baseside3 base-side
+     * @param height pyramid
+     * Constructor
+     */
     public Pyramid(float baseside1, float baseside2,
             float baseside3, float height) {
         this.baseside1 = baseside1;
@@ -22,7 +30,10 @@ public class Pyramid {
         t = new Triangle(baseside1, baseside2, baseside3);
     }
     
-    //Returns the float value of the total area of the 4 planes.
+    /**
+     *
+     * @return the float value of the total area of the 4 planes.
+     */
     public float Area() {
         float s = (float)0.5*(baseside1+baseside2+baseside3);
         float ir = (float)Math.sqrt((s-baseside1)*(s-baseside2)*(s-baseside3)/s);
@@ -30,7 +41,10 @@ public class Pyramid {
         return t.Area() + (float)0.5*t.Perimeter()*sh;
     }
     
-    //Returns the float value of the volume of the Pyramid. 
+    /**
+     *
+     * @return the float value of the volume of the Pyramid. 
+     */
     public float Volume(){
         return t.Area()*height/3;
     }

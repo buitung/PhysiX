@@ -22,6 +22,10 @@ public class Trig extends javax.swing.JPanel {
      */
     private MainUI mainUI;
 
+    /**
+     *
+     * @param mainUI
+     */
     public Trig(MainUI mainUI) {
         this.mainUI = mainUI;
         initComponents();
@@ -124,6 +128,10 @@ public class Trig extends javax.swing.JPanel {
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    /**
+     *
+     * @param cards
+     */
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;
         jButton4.addActionListener(new ActionListener() {

@@ -22,6 +22,10 @@ public class FrontPage extends javax.swing.JPanel {
      */
     private MainUI mainUI;
 
+    /**
+     *
+     * @param mainUI
+     */
     public FrontPage(MainUI mainUI) {
         this.mainUI = mainUI;
         initComponents();
@@ -135,7 +139,10 @@ public class FrontPage extends javax.swing.JPanel {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton5ActionPerformed
-
+    /**
+     *
+     * @param evt
+     */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
@@ -148,6 +155,10 @@ public class FrontPage extends javax.swing.JPanel {
 
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    /**
+     *
+     * @param cards
+     */
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;
         jButton1.addActionListener(new ActionListener() {
