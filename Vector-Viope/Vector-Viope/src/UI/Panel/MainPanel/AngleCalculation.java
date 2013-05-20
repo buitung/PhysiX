@@ -31,110 +31,110 @@ public class AngleCalculation extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        lblWelcome = new javax.swing.JLabel();
+        lblCopyright = new javax.swing.JLabel();
+        txtAngle = new javax.swing.JTextField();
+        lblAngle = new javax.swing.JLabel();
+        answerPanel = new javax.swing.JPanel();
+        lblSin = new javax.swing.JLabel();
+        lblCos = new javax.swing.JLabel();
+        lblTan = new javax.swing.JLabel();
+        lblSinAnswer = new javax.swing.JLabel();
+        lblCosAnswer = new javax.swing.JLabel();
+        lblTanAnswer = new javax.swing.JLabel();
+        btnCalculate = new javax.swing.JButton();
+        btnInformation = new javax.swing.JButton();
+        lblDegree = new javax.swing.JLabel();
+        btnDegreeRadian = new javax.swing.JButton();
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel1.setText("Welcome to PhysiX");
+        lblWelcome.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblWelcome.setText("Welcome to PhysiX");
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel2.setText("Copyright IPEramus 2013");
+        lblCopyright.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblCopyright.setText("Copyright IPEramus 2013");
 
-        jTextField1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextField1.setText("    ");
+        txtAngle.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtAngle.setText("    ");
 
-        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel3.setText("Angle");
+        lblAngle.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblAngle.setText("Angle");
 
-        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel4.setText("Sin");
+        lblSin.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblSin.setText("Sin");
 
-        jLabel5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel5.setText("Cos");
+        lblCos.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblCos.setText("Cos");
 
-        jLabel6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel6.setText("Tan");
+        lblTan.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblTan.setText("Tan");
 
-        jLabel7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel7.setText("   ");
+        lblSinAnswer.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblSinAnswer.setText("   ");
 
-        jLabel8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel8.setText("   ");
+        lblCosAnswer.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblCosAnswer.setText("   ");
 
-        jLabel9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel9.setText("   ");
+        lblTanAnswer.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblTanAnswer.setText("   ");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
+        javax.swing.GroupLayout answerPanelLayout = new javax.swing.GroupLayout(answerPanel);
+        answerPanel.setLayout(answerPanelLayout);
+        answerPanelLayout.setHorizontalGroup(
+            answerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(answerPanelLayout.createSequentialGroup()
+                .addGroup(answerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblSin)
+                    .addComponent(lblCos)
+                    .addComponent(lblTan))
                 .addGap(37, 37, 37)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(answerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblTanAnswer, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
+                    .addComponent(lblSinAnswer, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
+                    .addComponent(lblCosAnswer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        answerPanelLayout.setVerticalGroup(
+            answerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(answerPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel7))
+                .addGroup(answerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSin)
+                    .addComponent(lblSinAnswer))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel8))
+                .addGroup(answerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCos)
+                    .addComponent(lblCosAnswer))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel9))
+                .addGroup(answerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTan)
+                    .addComponent(lblTanAnswer))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton1.setText("Calculate");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCalculate.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnCalculate.setText("Calculate");
+        btnCalculate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCalculateActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton2.setText("Information");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnInformation.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnInformation.setText("Information");
+        btnInformation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnInformationActionPerformed(evt);
             }
         });
 
-        jLabel10.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel10.setText("Degree");
+        lblDegree.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblDegree.setText("Degree");
 
-        jButton3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton3.setText("Degree/Radian");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnDegreeRadian.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnDegreeRadian.setText("Degree/Radian");
+        btnDegreeRadian.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnDegreeRadianActionPerformed(evt);
             }
         });
 
@@ -146,23 +146,23 @@ public class AngleCalculation extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(lblWelcome)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2))
+                        .addComponent(lblCopyright))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(answerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
+                                .addComponent(lblAngle)
                                 .addGap(29, 29, 29)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtAngle, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel10)))
+                                .addComponent(lblDegree)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btnCalculate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnInformation, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnDegreeRadian, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(1, 1, 1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -170,62 +170,62 @@ public class AngleCalculation extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lblWelcome)
+                    .addComponent(lblCopyright))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10)
-                    .addComponent(jButton3))
+                    .addComponent(lblAngle)
+                    .addComponent(txtAngle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDegree)
+                    .addComponent(btnDegreeRadian))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(answerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(7, 7, 7)
-                        .addComponent(jButton1)
+                        .addComponent(btnCalculate)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton2)
+                        .addComponent(btnInformation)
                         .addContainerGap())))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnDegreeRadianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDegreeRadianActionPerformed
         // TODO add your handling code here:
-        if (jTextField1.getText().trim().length() > 0) {
+        if (txtAngle.getText().trim().length() > 0) {
             try {
-                if (jLabel10.getText().equalsIgnoreCase("Degree")) {
-                    jLabel10.setText("Radian");
-                    jTextField1.setText(
+                if (lblDegree.getText().equalsIgnoreCase("Degree")) {
+                    lblDegree.setText("Radian");
+                    txtAngle.setText(
                             Float.toString(
-                            MathUtils.Deg2Rad(Float.parseFloat(jTextField1.getText()))));
+                            MathUtils.Deg2Rad(Float.parseFloat(txtAngle.getText()))));
                 } else {
-                    jLabel10.setText("Degree");
-                    jTextField1.setText(
+                    lblDegree.setText("Degree");
+                    txtAngle.setText(
                             Float.toString(
-                            MathUtils.Rag2Deg(Float.parseFloat(jTextField1.getText()))));
+                            MathUtils.Rag2Deg(Float.parseFloat(txtAngle.getText()))));
                 }
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this, "Please enter the angle in the right form");
-                jLabel7.setText("");
-                jLabel8.setText("");
-                jLabel9.setText("");
+                lblSinAnswer.setText("");
+                lblCosAnswer.setText("");
+                lblTanAnswer.setText("");
             }
         } else {
-            if (jLabel10.getText().equalsIgnoreCase("Degree")) {
-                jLabel10.setText("Radian");
+            if (lblDegree.getText().equalsIgnoreCase("Degree")) {
+                lblDegree.setText("Radian");
             } else {
-                jLabel10.setText("Degree");
+                lblDegree.setText("Degree");
             }
         }
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnDegreeRadianActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
         // TODO add your handling code here:
         double ee = 0.0001;
         try {
-            double ang = Double.parseDouble(jTextField1.getText());
-            if (jLabel10.getText().equalsIgnoreCase("Degree")) {
+            double ang = Double.parseDouble(txtAngle.getText());
+            if (lblDegree.getText().equalsIgnoreCase("Degree")) {
                 ang = MathUtils.Deg2Rad((float) ang);
             }
             double s = Math.sin(ang);
@@ -261,29 +261,29 @@ public class AngleCalculation extends javax.swing.JPanel {
             }
             System.out.println(c);
             if (Double.toString(s).length() > 6) {
-                jLabel7.setText(Double.toString(s).substring(0, 6));
+                lblSinAnswer.setText(Double.toString(s).substring(0, 6));
             } else {
-                jLabel7.setText(Double.toString(s));
+                lblSinAnswer.setText(Double.toString(s));
             }
             if (Double.toString(c).length() > 6) {
-                jLabel8.setText(Double.toString(c).substring(0, 6));
+                lblCosAnswer.setText(Double.toString(c).substring(0, 6));
             } else {
-                jLabel8.setText(Double.toString(c));
+                lblCosAnswer.setText(Double.toString(c));
             }
             if (Double.toString(t).length() > 6) {
-                jLabel9.setText(Double.toString(t).substring(0, 6));
+                lblTanAnswer.setText(Double.toString(t).substring(0, 6));
             } else {
-                jLabel9.setText(Double.toString(t));
+                lblTanAnswer.setText(Double.toString(t));
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Please enter the angle in the right form");
-            jLabel7.setText("");
-            jLabel8.setText("");
-            jLabel9.setText("");
+            lblSinAnswer.setText("");
+            lblCosAnswer.setText("");
+            lblTanAnswer.setText("");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCalculateActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnInformationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInformationActionPerformed
         // TODO add your handling code here:
         JFrame infoFr = new JFrame();
         infoFr.setContentPane(new AngleCalInformation());
@@ -291,22 +291,22 @@ public class AngleCalculation extends javax.swing.JPanel {
         infoFr.setVisible(true);
         infoFr.setTitle("About Calculating Angle Information");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnInformationActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPanel answerPanel;
+    private javax.swing.JButton btnCalculate;
+    private javax.swing.JButton btnDegreeRadian;
+    private javax.swing.JButton btnInformation;
+    private javax.swing.JLabel lblAngle;
+    private javax.swing.JLabel lblCopyright;
+    private javax.swing.JLabel lblCos;
+    private javax.swing.JLabel lblCosAnswer;
+    private javax.swing.JLabel lblDegree;
+    private javax.swing.JLabel lblSin;
+    private javax.swing.JLabel lblSinAnswer;
+    private javax.swing.JLabel lblTan;
+    private javax.swing.JLabel lblTanAnswer;
+    private javax.swing.JLabel lblWelcome;
+    private javax.swing.JTextField txtAngle;
     // End of variables declaration//GEN-END:variables
 }
