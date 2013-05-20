@@ -30,67 +30,67 @@ public class Circle extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblCopyright = new javax.swing.JLabel();
+        lblWelcome = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        lblRadius = new javax.swing.JLabel();
+        txtRadius = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        lblCircumference = new javax.swing.JLabel();
+        lblCirAns = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        lblArea = new javax.swing.JLabel();
+        lblAreaAns = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnCalculate = new javax.swing.JButton();
+        btnInformation = new javax.swing.JButton();
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel2.setText("Copyright by IPEramus 2013");
+        lblCopyright.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblCopyright.setText("Copyright by IPEramus 2013");
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel1.setText("Welcome to PhysiX");
+        lblWelcome.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblWelcome.setText("Welcome to PhysiX");
 
-        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel3.setText("Radius");
+        lblRadius.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblRadius.setText("Radius");
 
-        jTextField1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextField1.setText("  ");
+        txtRadius.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtRadius.setText("  ");
 
         jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel4.setText("m");
 
-        jLabel5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel5.setText("Circumference");
+        lblCircumference.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblCircumference.setText("Circumference");
 
-        jLabel6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel6.setText("  ");
+        lblCirAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblCirAns.setText("  ");
 
         jLabel7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel7.setText("m");
 
-        jLabel8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel8.setText("Area");
+        lblArea.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblArea.setText("Area");
 
-        jLabel9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel9.setText("  ");
+        lblAreaAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblAreaAns.setText("  ");
 
         jLabel10.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel10.setText("m^2");
 
-        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton1.setText("Calculate");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCalculate.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnCalculate.setText("Calculate");
+        btnCalculate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCalculateActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton2.setText("Information");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnInformation.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnInformation.setText("Information");
+        btnInformation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnInformationActionPerformed(evt);
             }
         });
 
@@ -100,15 +100,15 @@ public class Circle extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
+                    .addComponent(lblRadius)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel8)))
+                        .addComponent(lblCircumference, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(lblArea)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
+                    .addComponent(lblAreaAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblCirAns, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtRadius, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -117,31 +117,31 @@ public class Circle extends javax.swing.JPanel {
                     .addComponent(jLabel10))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(btnInformation, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                    .addComponent(btnCalculate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblRadius)
+                    .addComponent(txtRadius, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnCalculate, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)
+                            .addComponent(lblCircumference)
+                            .addComponent(lblCirAns)
                             .addComponent(jLabel7))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9)
+                            .addComponent(lblArea)
+                            .addComponent(lblAreaAns)
                             .addComponent(jLabel10)))
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnInformation, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -153,9 +153,9 @@ public class Circle extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(67, 67, 67)
-                        .addComponent(jLabel2))
+                        .addComponent(lblCopyright))
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -163,39 +163,39 @@ public class Circle extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lblWelcome)
+                    .addComponent(lblCopyright))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
         // TODO add your handling code here:
         try {
-            PhysixLib.Circle cir = new PhysixLib.Circle(Float.parseFloat(jTextField1.getText().toString()));
-            if (Float.parseFloat(jTextField1.getText()) <= 0) {
+            PhysixLib.Circle cir = new PhysixLib.Circle(Float.parseFloat(txtRadius.getText().toString()));
+            if (Float.parseFloat(txtRadius.getText()) <= 0) {
                 throw new ArithmeticException();
             }
-            jLabel6.setText(Float.toString(cir.Circumference()));
-            jLabel9.setText(Float.toString(cir.Area()));
+            lblCirAns.setText(Float.toString(cir.Circumference()));
+            lblAreaAns.setText(Float.toString(cir.Area()));
         } catch (ArithmeticException e) {
             JOptionPane.showMessageDialog(this,
                     "Radius must be higher than zero.\n"
                     + "Please enter the radius again.");
-            jLabel6.setText("");
-            jLabel9.setText("");
+            lblCirAns.setText("");
+            lblAreaAns.setText("");
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Please enter the radius in the right form");
-            jLabel6.setText("");
-            jLabel9.setText("");
+            lblCirAns.setText("");
+            lblAreaAns.setText("");
 
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCalculateActionPerformed
  
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnInformationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInformationActionPerformed
         // TODO add your handling code here:
         JFrame infoFr = new JFrame();
         infoFr.setContentPane(new CircleInformation());
@@ -203,21 +203,21 @@ public class Circle extends javax.swing.JPanel {
         infoFr.setVisible(true);
         infoFr.setTitle("About Circle");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnInformationActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton btnCalculate;
+    private javax.swing.JButton btnInformation;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lblArea;
+    private javax.swing.JLabel lblAreaAns;
+    private javax.swing.JLabel lblCirAns;
+    private javax.swing.JLabel lblCircumference;
+    private javax.swing.JLabel lblCopyright;
+    private javax.swing.JLabel lblRadius;
+    private javax.swing.JLabel lblWelcome;
+    private javax.swing.JTextField txtRadius;
     // End of variables declaration//GEN-END:variables
 }

@@ -20,25 +20,25 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblWelcome" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblCopyright" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAngle" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblHypotenuse" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblAdjacent" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblOpposite" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jLabel8" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel9" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField1" alignment="0" pref="140" max="32767" attributes="0"/>
+                                  <Component id="lblOppositeAns" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="lblAdjacentAns" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtHypotenuse" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtAngle" alignment="0" pref="140" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -46,19 +46,19 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblDegree" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblm2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblm3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton2" max="32767" attributes="0"/>
-                                  <Component id="jButton1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton3" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnCal" max="32767" attributes="0"/>
+                                  <Component id="btnInfo" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnDegreeRad" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblm" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -72,36 +72,36 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblWelcome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCopyright" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblAngle" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAngle" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnDegreeRad" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDegree" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblHypotenuse" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblm" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHypotenuse" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblAdjacentAns" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblAdjacent" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblm2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCal" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblOpposite" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblm3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblOppositeAns" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnInfo" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -110,7 +110,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="lblWelcome">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="2"/>
@@ -118,7 +118,7 @@
         <Property name="text" type="java.lang.String" value="Welcome to PhysiX"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="lblCopyright">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="2"/>
@@ -126,7 +126,7 @@
         <Property name="text" type="java.lang.String" value="Copyright IPEramus 2013"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="txtAngle">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -134,7 +134,7 @@
         <Property name="text" type="java.lang.String" value="    "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="lblAngle">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -142,7 +142,7 @@
         <Property name="text" type="java.lang.String" value="Angle"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="lblHypotenuse">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -150,7 +150,7 @@
         <Property name="text" type="java.lang.String" value="Hypotenuse"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="lblAdjacent">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -158,7 +158,7 @@
         <Property name="text" type="java.lang.String" value="Adjacent"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="lblOpposite">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -166,7 +166,7 @@
         <Property name="text" type="java.lang.String" value="Opposite"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
+    <Component class="javax.swing.JLabel" name="lblOppositeAns">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -174,7 +174,7 @@
         <Property name="text" type="java.lang.String" value="   "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
+    <Component class="javax.swing.JLabel" name="lblAdjacentAns">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -182,7 +182,7 @@
         <Property name="text" type="java.lang.String" value="   "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
+    <Component class="javax.swing.JLabel" name="lblm">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -190,7 +190,7 @@
         <Property name="text" type="java.lang.String" value="m"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
+    <Component class="javax.swing.JLabel" name="lblm2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -198,7 +198,7 @@
         <Property name="text" type="java.lang.String" value="m"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel12">
+    <Component class="javax.swing.JLabel" name="lblm3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -206,14 +206,14 @@
         <Property name="text" type="java.lang.String" value="m"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="txtHypotenuse">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="btnInfo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -221,10 +221,10 @@
         <Property name="text" type="java.lang.String" value="Information"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInfoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="btnCal">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -232,10 +232,10 @@
         <Property name="text" type="java.lang.String" value="Calculate"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCalActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="btnDegreeRad">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>
@@ -243,10 +243,10 @@
         <Property name="text" type="java.lang.String" value="Degree/Radian"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDegreeRadActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="lblDegree">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="0"/>

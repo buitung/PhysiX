@@ -31,86 +31,86 @@ public class Triangle extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblCopyright = new javax.swing.JLabel();
+        lblWelcome = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        lblSide = new javax.swing.JLabel();
+        lblA = new javax.swing.JLabel();
+        txtA = new javax.swing.JTextField();
+        lblB = new javax.swing.JLabel();
+        txtB = new javax.swing.JTextField();
+        lblC = new javax.swing.JLabel();
+        txtC = new javax.swing.JTextField();
+        lblPerimeter = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        lblArea = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        btnCal = new javax.swing.JButton();
+        btnInfo = new javax.swing.JButton();
+        lblPerAns = new javax.swing.JLabel();
+        lblAreaAns = new javax.swing.JLabel();
 
         jLabel3.setText("jLabel3");
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Copyright by IPEramus 2013");
+        lblCopyright.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblCopyright.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblCopyright.setText("Copyright by IPEramus 2013");
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setText("Welcome to PhysiX");
+        lblWelcome.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblWelcome.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblWelcome.setText("Welcome to PhysiX");
 
-        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel4.setText("Sides");
+        lblSide.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblSide.setText("Sides");
 
-        jLabel5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel5.setText("a = ");
+        lblA.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblA.setText("a = ");
 
-        jTextField1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtA.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel6.setText(" b = ");
+        lblB.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblB.setText(" b = ");
 
-        jTextField2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtB.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel7.setText(" c = ");
+        lblC.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblC.setText(" c = ");
 
-        jTextField3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextField3.setText(" ");
+        txtC.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtC.setText(" ");
 
-        jLabel8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel8.setText("Perimeter");
+        lblPerimeter.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblPerimeter.setText("Perimeter");
 
         jLabel10.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel10.setText("m");
 
-        jLabel11.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel11.setText("Area");
+        lblArea.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblArea.setText("Area");
 
         jLabel13.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
         jLabel13.setText("m^2");
 
-        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton1.setText("Calculate");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCal.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnCal.setText("Calculate");
+        btnCal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCalActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton2.setText("Information");
-        jButton2.setMaximumSize(new java.awt.Dimension(77, 23));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnInfo.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnInfo.setText("Information");
+        btnInfo.setMaximumSize(new java.awt.Dimension(77, 23));
+        btnInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnInfoActionPerformed(evt);
             }
         });
 
-        jLabel9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblPerAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
-        jLabel12.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblAreaAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -120,23 +120,23 @@ public class Triangle extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblSide, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblPerimeter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblArea, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(4, 4, 4)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtA, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6)
+                        .addComponent(lblB)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtB, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblPerAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblAreaAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -145,38 +145,38 @@ public class Triangle extends javax.swing.JPanel {
                             .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(9, 9, 9))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtC, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(btnCal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnInfo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField1)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField2)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField3)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblSide, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtA)
+                    .addComponent(lblB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtB)
+                    .addComponent(lblC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtC)
+                    .addComponent(btnCal, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblPerimeter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblPerAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(4, 4, 4)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblArea, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblAreaAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(btnInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
@@ -189,17 +189,17 @@ public class Triangle extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2)))
+                        .addComponent(lblCopyright)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lblWelcome)
+                    .addComponent(lblCopyright))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(3, 3, 3))
@@ -209,34 +209,34 @@ public class Triangle extends javax.swing.JPanel {
     private boolean checkTriangle(float a, float b, float c) {
         return (a + b > c) && (a + c > b) && (c + b > a) && (a > 0) && (b * c > 0);
     }
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalActionPerformed
         // TODO add your handling code here:
         try {
-            PhysixLib.Triangle tri = new PhysixLib.Triangle(Float.parseFloat(jTextField1.getText().toString()),
-                    Float.parseFloat(jTextField2.getText().toString()),
-                    Float.parseFloat(jTextField3.getText().toString()));
-            if (!checkTriangle(Float.parseFloat(jTextField1.getText().toString()),
-                    Float.parseFloat(jTextField2.getText().toString()),
-                    Float.parseFloat(jTextField3.getText().toString()))) {
+            PhysixLib.Triangle tri = new PhysixLib.Triangle(Float.parseFloat(txtA.getText().toString()),
+                    Float.parseFloat(txtB.getText().toString()),
+                    Float.parseFloat(txtC.getText().toString()));
+            if (!checkTriangle(Float.parseFloat(txtA.getText().toString()),
+                    Float.parseFloat(txtB.getText().toString()),
+                    Float.parseFloat(txtC.getText().toString()))) {
                 throw new ArithmeticException();
             }
-            jLabel9.setText(Float.toString(tri.Perimeter()));
-            jLabel12.setText(Float.toString(tri.Area()));
+            lblPerAns.setText(Float.toString(tri.Perimeter()));
+            lblAreaAns.setText(Float.toString(tri.Area()));
         } catch (ArithmeticException e) {
             JOptionPane.showMessageDialog(this,
                     "These are not three side of a triangle\n"
                     + "Please enter again three side of a triangle");
-            jLabel9.setText("");
-            jLabel12.setText("");
+            lblPerAns.setText("");
+            lblAreaAns.setText("");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this,
                     "Please enter three side of a triangle in the right form");
-            jLabel9.setText("");
-            jLabel12.setText("");
+            lblPerAns.setText("");
+            lblAreaAns.setText("");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCalActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInfoActionPerformed
         // TODO add your handling code here:
         JFrame infoFr = new JFrame();
         infoFr.setContentPane(new TriangleInformation());
@@ -244,26 +244,26 @@ public class Triangle extends javax.swing.JPanel {
         infoFr.setVisible(true);
         infoFr.setTitle("About Triangle");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnInfoActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton btnCal;
+    private javax.swing.JButton btnInfo;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JLabel lblA;
+    private javax.swing.JLabel lblArea;
+    private javax.swing.JLabel lblAreaAns;
+    private javax.swing.JLabel lblB;
+    private javax.swing.JLabel lblC;
+    private javax.swing.JLabel lblCopyright;
+    private javax.swing.JLabel lblPerAns;
+    private javax.swing.JLabel lblPerimeter;
+    private javax.swing.JLabel lblSide;
+    private javax.swing.JLabel lblWelcome;
+    private javax.swing.JTextField txtA;
+    private javax.swing.JTextField txtB;
+    private javax.swing.JTextField txtC;
     // End of variables declaration//GEN-END:variables
 }

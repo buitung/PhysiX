@@ -40,42 +40,42 @@ public class Trig extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblWelcome = new javax.swing.JLabel();
+        lblCopyright = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnAngle = new javax.swing.JButton();
+        btnSide = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel1.setText("Welcome to PhysiX");
+        lblWelcome.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblWelcome.setText("Welcome to PhysiX");
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel2.setText("Copyright by IPEramus 2013");
+        lblCopyright.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblCopyright.setText("Copyright by IPEramus 2013");
 
         jPanel1.setLayout(new java.awt.GridLayout(3, 1));
 
-        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton1.setText("Angle Calculation");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnAngle.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnAngle.setText("Angle Calculation");
+        btnAngle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnAngleActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
+        jPanel1.add(btnAngle);
 
-        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton2.setText("Side Calculation");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnSide.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnSide.setText("Side Calculation");
+        btnSide.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnSideActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2);
+        jPanel1.add(btnSide);
 
-        jButton4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton4.setText("Back");
-        jPanel1.add(jButton4);
+        btnBack.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnBack.setText("Back");
+        jPanel1.add(btnBack);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -86,9 +86,9 @@ public class Trig extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(86, 86, 86)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(lblCopyright, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -96,15 +96,15 @@ public class Trig extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lblWelcome)
+                    .addComponent(lblCopyright))
                 .addGap(26, 26, 26)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnAngleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAngleActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
         fr.setTitle("Angle Calculation");
@@ -114,9 +114,9 @@ public class Trig extends javax.swing.JPanel {
         fr.pack();
         fr.setVisible(true);
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnAngleActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnSideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSideActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
         fr.setTitle("Side calculation");
@@ -126,7 +126,7 @@ public class Trig extends javax.swing.JPanel {
         fr.pack();
         fr.setVisible(true);
 
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnSideActionPerformed
 
     /**
      *
@@ -134,7 +134,7 @@ public class Trig extends javax.swing.JPanel {
      */
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;
-        jButton4.addActionListener(new ActionListener() {
+        btnBack.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 CardLayout cl = (CardLayout) c.getLayout();
@@ -144,11 +144,11 @@ public class Trig extends javax.swing.JPanel {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton btnAngle;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnSide;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblCopyright;
+    private javax.swing.JLabel lblWelcome;
     // End of variables declaration//GEN-END:variables
 }

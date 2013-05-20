@@ -32,72 +32,72 @@ public class Quad extends javax.swing.JPanel {
 
         jLabel6 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblWidth = new javax.swing.JLabel();
+        lblHeight = new javax.swing.JLabel();
+        txtHeight = new javax.swing.JTextField();
+        txtWidth = new javax.swing.JTextField();
+        lblm = new javax.swing.JLabel();
+        lblm2 = new javax.swing.JLabel();
+        lblArea = new javax.swing.JLabel();
+        lblPerimeter = new javax.swing.JLabel();
+        lblSqm = new javax.swing.JLabel();
+        lblm3 = new javax.swing.JLabel();
+        btnCal = new javax.swing.JButton();
+        btnInfo = new javax.swing.JButton();
+        lblAreaAns = new javax.swing.JLabel();
+        lblPerimeterAns = new javax.swing.JLabel();
+        lblWelcome = new javax.swing.JLabel();
+        lblCopyright = new javax.swing.JLabel();
 
         jLabel6.setText("jLabel6");
 
-        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel3.setText("Width");
+        lblWidth.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblWidth.setText("Width");
 
-        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel4.setText("Height");
+        lblHeight.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblHeight.setText("Height");
 
-        jTextField1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtHeight.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
-        jTextField2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtWidth.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
-        jLabel5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel5.setText("m");
+        lblm.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblm.setText("m");
 
-        jLabel7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel7.setText("m");
+        lblm2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblm2.setText("m");
 
-        jLabel8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel8.setText("Area");
+        lblArea.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblArea.setText("Area");
 
-        jLabel9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel9.setText("Perimeter");
+        lblPerimeter.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblPerimeter.setText("Perimeter");
 
-        jLabel12.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel12.setText("m^2");
+        lblSqm.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblSqm.setText("m^2");
 
-        jLabel13.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel13.setText("m");
+        lblm3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblm3.setText("m");
 
-        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton2.setText("Calculate");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnCal.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnCal.setText("Calculate");
+        btnCal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnCalActionPerformed(evt);
             }
         });
 
-        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton1.setText("Information");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnInfo.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnInfo.setText("Information");
+        btnInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnInfoActionPerformed(evt);
             }
         });
 
-        jLabel14.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblAreaAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
-        jLabel15.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblPerimeterAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -108,34 +108,34 @@ public class Quad extends javax.swing.JPanel {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4))
+                            .addComponent(lblWidth)
+                            .addComponent(lblHeight))
                         .addGap(57, 57, 57)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtWidth, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel5))
+                                .addComponent(lblm))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
-                                    .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(lblAreaAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(txtHeight, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
+                                    .addComponent(lblPerimeterAns, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel7))
+                                        .addComponent(lblm2))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                         .addGap(10, 10, 10)
                                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9))
+                                            .addComponent(lblm3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(lblSqm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))
+                    .addComponent(lblArea)
+                    .addComponent(lblPerimeter))
                 .addGap(27, 27, 27)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
+                    .addComponent(btnCal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -144,37 +144,37 @@ public class Quad extends javax.swing.JPanel {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5))
+                            .addComponent(lblWidth)
+                            .addComponent(txtWidth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblm))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel7))
+                            .addComponent(lblHeight)
+                            .addComponent(txtHeight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblm2))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblSqm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblArea, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblAreaAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(7, 7, 7)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lblPerimeter)
+                            .addComponent(lblm3)
+                            .addComponent(lblPerimeterAns, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCal, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel1.setText("Welcome to PhysiX");
+        lblWelcome.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblWelcome.setText("Welcome to PhysiX");
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Copyright IPEramus 2013");
+        lblCopyright.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblCopyright.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblCopyright.setText("Copyright IPEramus 2013");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -185,9 +185,9 @@ public class Quad extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblWelcome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(lblCopyright, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -195,39 +195,39 @@ public class Quad extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lblWelcome)
+                    .addComponent(lblCopyright))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnCalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalActionPerformed
         // TODO add your handling code here:
         try {
-            PhysixLib.Quad qu = new PhysixLib.Quad(Float.parseFloat(jTextField2.getText().toString()),
-                    Float.parseFloat(jTextField1.getText().toString()));
-            if (Float.parseFloat(jTextField1.getText().toString())<=0 ||
-                    Float.parseFloat(jTextField2.getText().toString())<=0){
+            PhysixLib.Quad qu = new PhysixLib.Quad(Float.parseFloat(txtWidth.getText().toString()),
+                    Float.parseFloat(txtHeight.getText().toString()));
+            if (Float.parseFloat(txtHeight.getText().toString())<=0 ||
+                    Float.parseFloat(txtWidth.getText().toString())<=0){
                 throw new ArithmeticException();
             }
-            jLabel14.setText(Float.toString(qu.Area()));
-            jLabel15.setText(Float.toString(qu.Perimeter()));
+            lblAreaAns.setText(Float.toString(qu.Area()));
+            lblPerimeterAns.setText(Float.toString(qu.Perimeter()));
         } catch (ArithmeticException e) {
             JOptionPane.showMessageDialog(this, 
                     "The width and the height must be higher than zero.\n"
                     + "Please enter the width and height again");
-            jLabel14.setText("");
-            jLabel15.setText("");
+            lblAreaAns.setText("");
+            lblPerimeterAns.setText("");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Please enter the width and height in the right form");
-            jLabel14.setText("");
-            jLabel15.setText("");
+            lblAreaAns.setText("");
+            lblPerimeterAns.setText("");
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnCalActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInfoActionPerformed
         // TODO add your handling code here:
         JFrame infoFr = new JFrame();
         infoFr.setContentPane(new QuadInformation());
@@ -235,25 +235,25 @@ public class Quad extends javax.swing.JPanel {
         infoFr.setVisible(true);
         infoFr.setTitle("About Rectangle and Square");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnInfoActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JButton btnCal;
+    private javax.swing.JButton btnInfo;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lblArea;
+    private javax.swing.JLabel lblAreaAns;
+    private javax.swing.JLabel lblCopyright;
+    private javax.swing.JLabel lblHeight;
+    private javax.swing.JLabel lblPerimeter;
+    private javax.swing.JLabel lblPerimeterAns;
+    private javax.swing.JLabel lblSqm;
+    private javax.swing.JLabel lblWelcome;
+    private javax.swing.JLabel lblWidth;
+    private javax.swing.JLabel lblm;
+    private javax.swing.JLabel lblm2;
+    private javax.swing.JLabel lblm3;
+    private javax.swing.JTextField txtHeight;
+    private javax.swing.JTextField txtWidth;
     // End of variables declaration//GEN-END:variables
 }

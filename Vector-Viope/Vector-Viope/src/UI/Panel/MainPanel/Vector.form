@@ -22,9 +22,9 @@
                   <Component id="jPanel2" max="32767" attributes="0"/>
                   <Component id="jPanel1" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="132" max="-2" attributes="0"/>
+                      <Component id="lblWelcome" min="-2" pref="132" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
-                      <Component id="jLabel2" max="32767" attributes="0"/>
+                      <Component id="lblCopyright" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
@@ -35,8 +35,8 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblWelcome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCopyright" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="jPanel1" pref="217" max="32767" attributes="0"/>
@@ -48,7 +48,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="lblWelcome">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="2"/>
@@ -56,7 +56,7 @@
         <Property name="text" type="java.lang.String" value="Welcome to PhysiX"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="lblCopyright">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="DejaVu Sans" size="12" style="2"/>
@@ -71,7 +71,7 @@
         <Property name="rows" type="int" value="4"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="btnInfo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -79,10 +79,10 @@
             <Property name="text" type="java.lang.String" value="Info"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInfoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="btnAdd">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -90,10 +90,10 @@
             <Property name="text" type="java.lang.String" value="Add"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton5">
+        <Component class="javax.swing.JButton" name="btnSubtract">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -101,10 +101,10 @@
             <Property name="text" type="java.lang.String" value="Subtract"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubtractActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="btnMultiply">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -112,10 +112,10 @@
             <Property name="text" type="java.lang.String" value="Multiply"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMultiplyActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton4">
+        <Component class="javax.swing.JButton" name="btnCrossProduct">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -123,10 +123,10 @@
             <Property name="text" type="java.lang.String" value="Cross product"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCrossProductActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton6">
+        <Component class="javax.swing.JButton" name="btnDotProduct">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -134,10 +134,10 @@
             <Property name="text" type="java.lang.String" value="Dot product"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDotProductActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton7">
+        <Component class="javax.swing.JButton" name="btnAngle">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -145,10 +145,10 @@
             <Property name="text" type="java.lang.String" value="Angle"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAngleActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton8">
+        <Component class="javax.swing.JButton" name="btnDistance">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -156,7 +156,7 @@
             <Property name="text" type="java.lang.String" value="Distance"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDistanceActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -168,7 +168,7 @@
         <Property name="rows" type="int" value="1"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton9">
+        <Component class="javax.swing.JButton" name="btnBack">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>

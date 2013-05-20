@@ -40,85 +40,85 @@ public class Geo extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        jButton8 = new javax.swing.JButton();
+        lblWelcome = new javax.swing.JLabel();
+        lblCopyright = new javax.swing.JLabel();
+        ButtonPanel = new javax.swing.JPanel();
+        btnTriangle = new javax.swing.JButton();
+        btnBrick = new javax.swing.JButton();
+        btnQuad = new javax.swing.JButton();
+        btnSphere = new javax.swing.JButton();
+        btnCircle = new javax.swing.JButton();
+        btnPyramid = new javax.swing.JButton();
+        backPanel = new javax.swing.JPanel();
+        btnBack = new javax.swing.JButton();
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel2.setText("Welcome to PhysiX");
+        lblWelcome.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblWelcome.setText("Welcome to PhysiX");
 
-        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel3.setText("Copyright IPEramus 2013");
+        lblCopyright.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblCopyright.setText("Copyright IPEramus 2013");
 
-        jPanel1.setLayout(new java.awt.GridLayout(3, 2));
+        ButtonPanel.setLayout(new java.awt.GridLayout(3, 2));
 
-        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton1.setText("Triangle");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnTriangle.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnTriangle.setText("Triangle");
+        btnTriangle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnTriangleActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
+        ButtonPanel.add(btnTriangle);
 
-        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton2.setText("Brick");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnBrick.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnBrick.setText("Brick");
+        btnBrick.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnBrickActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2);
+        ButtonPanel.add(btnBrick);
 
-        jButton3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton3.setText("Quad");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnQuad.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnQuad.setText("Quad");
+        btnQuad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnQuadActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3);
+        ButtonPanel.add(btnQuad);
 
-        jButton4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton4.setText("Sphere");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnSphere.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnSphere.setText("Sphere");
+        btnSphere.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnSphereActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4);
+        ButtonPanel.add(btnSphere);
 
-        jButton5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton5.setText("Circle");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnCircle.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnCircle.setText("Circle");
+        btnCircle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnCircleActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5);
+        ButtonPanel.add(btnCircle);
 
-        jButton6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton6.setText("Pyramid");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnPyramid.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnPyramid.setText("Pyramid");
+        btnPyramid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnPyramidActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6);
+        ButtonPanel.add(btnPyramid);
 
-        jPanel2.setLayout(new java.awt.GridLayout(1, 1));
+        backPanel.setLayout(new java.awt.GridLayout(1, 1));
 
-        jButton8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton8.setText("Back");
-        jPanel2.add(jButton8);
+        btnBack.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnBack.setText("Back");
+        backPanel.add(btnBack);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -127,12 +127,12 @@ public class Geo extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ButtonPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(lblWelcome)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 181, Short.MAX_VALUE)
-                        .addComponent(jLabel3))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblCopyright))
+                    .addComponent(backPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -140,17 +140,17 @@ public class Geo extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2))
+                    .addComponent(lblCopyright)
+                    .addComponent(lblWelcome))
                 .addGap(35, 35, 35)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 308, Short.MAX_VALUE)
+                .addComponent(ButtonPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 308, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(backPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnTriangleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTriangleActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
         fr.setTitle("Triangle");
@@ -160,9 +160,9 @@ public class Geo extends javax.swing.JPanel {
         fr.pack();
         fr.setVisible(true);
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnTriangleActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnBrickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBrickActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
         fr.setTitle("Brick");
@@ -172,9 +172,9 @@ public class Geo extends javax.swing.JPanel {
         fr.pack();
         fr.setVisible(true);
 
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnBrickActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnQuadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuadActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
         fr.setTitle("Quad");
@@ -184,9 +184,9 @@ public class Geo extends javax.swing.JPanel {
         fr.pack();
         fr.setVisible(true);
 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnQuadActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnSphereActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSphereActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
         fr.setTitle("Sphere");
@@ -196,9 +196,9 @@ public class Geo extends javax.swing.JPanel {
         fr.pack();
         fr.setVisible(true);
 
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnSphereActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnCircleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCircleActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
         fr.setTitle("Circle");
@@ -208,9 +208,9 @@ public class Geo extends javax.swing.JPanel {
         fr.pack();
         fr.setVisible(true);
 
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnCircleActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnPyramidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPyramidActionPerformed
         // TODO add your handling code here:
         JFrame fr = new JFrame();
         fr.setTitle("Pyramid");
@@ -220,7 +220,7 @@ public class Geo extends javax.swing.JPanel {
         fr.pack();
         fr.setVisible(true);
 
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnPyramidActionPerformed
 
     /**
      *
@@ -228,7 +228,7 @@ public class Geo extends javax.swing.JPanel {
      */
     public void setActionToPerform(JPanel cards) {
         final JPanel c = cards;
-        jButton8.addActionListener(new ActionListener() {
+        btnBack.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 CardLayout cl = (CardLayout) c.getLayout();
@@ -238,16 +238,16 @@ public class Geo extends javax.swing.JPanel {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel ButtonPanel;
+    private javax.swing.JPanel backPanel;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnBrick;
+    private javax.swing.JButton btnCircle;
+    private javax.swing.JButton btnPyramid;
+    private javax.swing.JButton btnQuad;
+    private javax.swing.JButton btnSphere;
+    private javax.swing.JButton btnTriangle;
+    private javax.swing.JLabel lblCopyright;
+    private javax.swing.JLabel lblWelcome;
     // End of variables declaration//GEN-END:variables
 }

@@ -25,8 +25,8 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jPanel2" max="32767" attributes="0"/>
-                  <Component id="jPanel1" max="32767" attributes="0"/>
+                  <Component id="GridLayoutPanel" max="32767" attributes="0"/>
+                  <Component id="WelcomePanel" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -36,25 +36,25 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <Component id="WelcomePanel" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel2" pref="345" max="32767" attributes="0"/>
+              <Component id="GridLayoutPanel" pref="345" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="WelcomePanel">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel4" min="-2" pref="130" max="-2" attributes="0"/>
+                  <Component id="lblWelcome" min="-2" pref="130" max="-2" attributes="0"/>
                   <EmptySpace pref="113" max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="182" max="-2" attributes="0"/>
+                  <Component id="lblCopyright" min="-2" pref="182" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -64,8 +64,8 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblWelcome" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="lblCopyright" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="40" max="32767" attributes="0"/>
               </Group>
@@ -73,7 +73,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel4">
+        <Component class="javax.swing.JLabel" name="lblWelcome">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="2"/>
@@ -81,7 +81,7 @@
             <Property name="text" type="java.lang.String" value="Welcome to PhysiX"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="lblCopyright">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="2"/>
@@ -91,14 +91,14 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel2">
+    <Container class="javax.swing.JPanel" name="GridLayoutPanel">
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
         <Property name="columns" type="int" value="1"/>
         <Property name="rows" type="int" value="5"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="btnGeometry">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -106,7 +106,7 @@
             <Property name="text" type="java.lang.String" value="Geometry"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="btnVector">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -114,7 +114,7 @@
             <Property name="text" type="java.lang.String" value="Vector"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="btnTrigonometry">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -122,7 +122,7 @@
             <Property name="text" type="java.lang.String" value="Trigonometry"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton4">
+        <Component class="javax.swing.JButton" name="btnProjectile">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -130,10 +130,10 @@
             <Property name="text" type="java.lang.String" value="Projectile"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnProjectileActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton5">
+        <Component class="javax.swing.JButton" name="btnQuit">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="DejaVu Sans" size="12" style="0"/>
@@ -141,7 +141,7 @@
             <Property name="text" type="java.lang.String" value="Quit"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQuitActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

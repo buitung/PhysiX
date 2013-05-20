@@ -30,107 +30,107 @@ public class Pyramid extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
+        lblWelcome = new javax.swing.JLabel();
+        lblCopyright = new javax.swing.JLabel();
+        lblBaseSide = new javax.swing.JLabel();
+        lbla = new javax.swing.JLabel();
+        txta = new javax.swing.JTextField();
+        lblb = new javax.swing.JLabel();
+        txtb = new javax.swing.JTextField();
+        lblc = new javax.swing.JLabel();
+        txtc = new javax.swing.JTextField();
+        lblm4 = new javax.swing.JLabel();
+        txtHeight = new javax.swing.JTextField();
+        lblHeight = new javax.swing.JLabel();
+        lblcube3 = new javax.swing.JLabel();
+        lblsqm = new javax.swing.JLabel();
+        lblSurAns = new javax.swing.JLabel();
+        lblVolAns = new javax.swing.JLabel();
+        lblVol = new javax.swing.JLabel();
+        lblSurfaceArea = new javax.swing.JLabel();
+        btnCal = new javax.swing.JButton();
+        lblm3 = new javax.swing.JLabel();
+        btnInfo = new javax.swing.JButton();
+        lblm2 = new javax.swing.JLabel();
+        lblm = new javax.swing.JLabel();
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel1.setText("Welcome to PhysiX");
+        lblWelcome.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblWelcome.setText("Welcome to PhysiX");
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Copyright by IPEramus 2013");
+        lblCopyright.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblCopyright.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblCopyright.setText("Copyright by IPEramus 2013");
 
-        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel4.setText("Base sides");
+        lblBaseSide.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblBaseSide.setText("Base sides");
 
-        jLabel5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel5.setText("a = ");
+        lbla.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lbla.setText("a = ");
 
-        jTextField1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txta.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel6.setText(" b = ");
+        lblb.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblb.setText(" b = ");
 
-        jTextField2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtb.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel7.setText(" c = ");
+        lblc.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblc.setText(" c = ");
 
-        jTextField3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextField3.setText(" ");
+        txtc.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtc.setText(" ");
 
-        jLabel8.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel8.setText("m");
+        lblm4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblm4.setText("m");
 
-        jTextField4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextField4.setText("    ");
+        txtHeight.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtHeight.setText("    ");
 
-        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel3.setText("Height");
+        lblHeight.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblHeight.setText("Height");
 
-        jLabel10.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel10.setText("m^3");
+        lblcube3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblcube3.setText("m^3");
 
-        jLabel9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel9.setText("m^2");
+        lblsqm.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblsqm.setText("m^2");
 
-        jLabel11.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel11.setText("   ");
+        lblSurAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblSurAns.setText("   ");
 
-        jLabel12.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel12.setText("   ");
+        lblVolAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblVolAns.setText("   ");
 
-        jLabel13.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel13.setText("Volume");
+        lblVol.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblVol.setText("Volume");
 
-        jLabel14.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel14.setText("Surface Area");
+        lblSurfaceArea.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblSurfaceArea.setText("Surface Area");
 
-        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton1.setText("Calculate");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCal.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnCal.setText("Calculate");
+        btnCal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCalActionPerformed(evt);
             }
         });
 
-        jLabel15.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel15.setText("m");
+        lblm3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblm3.setText("m");
 
-        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton2.setText("Information");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnInfo.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnInfo.setText("Information");
+        btnInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnInfoActionPerformed(evt);
             }
         });
 
-        jLabel16.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel16.setText("m");
+        lblm2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblm2.setText("m");
 
-        jLabel17.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel17.setText("m");
+        lblm.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblm.setText("m");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -140,99 +140,99 @@ public class Pyramid extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(187, 187, 187)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblCopyright, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14)
+                            .addComponent(lblSurfaceArea)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
+                                        .addComponent(lblBaseSide)
                                         .addGap(71, 71, 71)
-                                        .addComponent(jLabel5)
+                                        .addComponent(lbla)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txta, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel3)
+                                        .addComponent(lblHeight)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(txtHeight, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel17)
+                                        .addComponent(lblm)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jLabel6)
+                                        .addComponent(lblb)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtb, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel16))
-                                    .addComponent(jLabel8)))
+                                        .addComponent(lblm2))
+                                    .addComponent(lblm4)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(175, 175, 175)
-                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(lblSurAns, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel13)
+                                .addComponent(lblVol)
                                 .addGap(129, 129, 129)
-                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(lblVolAns, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel7)
+                                .addComponent(lblc)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtc, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel15))
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel10))
+                                .addComponent(lblm3))
+                            .addComponent(lblsqm)
+                            .addComponent(lblcube3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(btnInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
+                            .addComponent(btnCal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(19, 19, 19))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lblWelcome)
+                    .addComponent(lblCopyright))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
+                                .addComponent(lblBaseSide)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel8)))
+                                    .addComponent(lblHeight)
+                                    .addComponent(txtHeight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblm4)))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel15)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel7)
-                                .addComponent(jLabel16)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel6)
-                                .addComponent(jLabel17)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel5)))
+                                .addComponent(lblm3)
+                                .addComponent(txtc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblc)
+                                .addComponent(lblm2)
+                                .addComponent(txtb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblb)
+                                .addComponent(lblm)
+                                .addComponent(txta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lbla)))
                         .addGap(8, 8, 8)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel14)
-                                    .addComponent(jLabel11)
-                                    .addComponent(jLabel9))
+                                    .addComponent(lblSurfaceArea)
+                                    .addComponent(lblSurAns)
+                                    .addComponent(lblsqm))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel13)
-                                    .addComponent(jLabel12)
-                                    .addComponent(jLabel10)))
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(lblVol)
+                                    .addComponent(lblVolAns)
+                                    .addComponent(lblcube3)))
+                            .addComponent(btnInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btnCal, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -241,42 +241,42 @@ public class Pyramid extends javax.swing.JPanel {
         return (a + b > c) && (a + c > b) && (c + b > a) && (a > 0) && (b * c > 0);
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalActionPerformed
         // TODO add your handling code here:
         try {
-            PhysixLib.Pyramid py = new PhysixLib.Pyramid(Float.parseFloat(jTextField1.getText().toString()),
-                    Float.parseFloat(jTextField2.getText().toString()),
-                    Float.parseFloat(jTextField3.getText().toString()),
-                    Float.parseFloat(jTextField4.getText().toString()));
-            if (!checkTriangle(Float.parseFloat(jTextField1.getText().toString()),
-                    Float.parseFloat(jTextField2.getText().toString()),
-                    Float.parseFloat(jTextField3.getText().toString()))) {
+            PhysixLib.Pyramid py = new PhysixLib.Pyramid(Float.parseFloat(txta.getText().toString()),
+                    Float.parseFloat(txtb.getText().toString()),
+                    Float.parseFloat(txtc.getText().toString()),
+                    Float.parseFloat(txtHeight.getText().toString()));
+            if (!checkTriangle(Float.parseFloat(txta.getText().toString()),
+                    Float.parseFloat(txtb.getText().toString()),
+                    Float.parseFloat(txtc.getText().toString()))) {
                 throw new ArithmeticException();
             }
-            if (Float.parseFloat(jTextField4.getText().toString())<=0) throw new NullPointerException();
-            jLabel11.setText(Float.toString(py.Area()));
-            jLabel12.setText(Float.toString(py.Volume()));
+            if (Float.parseFloat(txtHeight.getText().toString())<=0) throw new NullPointerException();
+            lblSurAns.setText(Float.toString(py.Area()));
+            lblVolAns.setText(Float.toString(py.Volume()));
         } catch (ArithmeticException e) {
             JOptionPane.showMessageDialog(this,
                     "These are not three side of the base triangle\n"
                     + "Please enter again three side of the base triangle");
-            jLabel11.setText("");
-            jLabel12.setText("");
+            lblSurAns.setText("");
+            lblVolAns.setText("");
         } catch(NullPointerException e){
             JOptionPane.showMessageDialog(this,
                     "The height must be higher than zero.\n"
                     + "Please enter again the height");
-            jLabel11.setText("");
-            jLabel12.setText("");        
+            lblSurAns.setText("");
+            lblVolAns.setText("");        
         }catch (Exception e) {
             JOptionPane.showMessageDialog(this,
                     "Please enter information in the right form");
-            jLabel11.setText("");
-            jLabel12.setText("");
+            lblSurAns.setText("");
+            lblVolAns.setText("");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCalActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInfoActionPerformed
         // TODO add your handling code here:
         JFrame infoFr = new JFrame();
         infoFr.setContentPane(new PyramidInformation());
@@ -284,30 +284,30 @@ public class Pyramid extends javax.swing.JPanel {
         infoFr.setVisible(true);
         infoFr.setTitle("About 4-face Pyramid");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnInfoActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JButton btnCal;
+    private javax.swing.JButton btnInfo;
+    private javax.swing.JLabel lblBaseSide;
+    private javax.swing.JLabel lblCopyright;
+    private javax.swing.JLabel lblHeight;
+    private javax.swing.JLabel lblSurAns;
+    private javax.swing.JLabel lblSurfaceArea;
+    private javax.swing.JLabel lblVol;
+    private javax.swing.JLabel lblVolAns;
+    private javax.swing.JLabel lblWelcome;
+    private javax.swing.JLabel lbla;
+    private javax.swing.JLabel lblb;
+    private javax.swing.JLabel lblc;
+    private javax.swing.JLabel lblcube3;
+    private javax.swing.JLabel lblm;
+    private javax.swing.JLabel lblm2;
+    private javax.swing.JLabel lblm3;
+    private javax.swing.JLabel lblm4;
+    private javax.swing.JLabel lblsqm;
+    private javax.swing.JTextField txtHeight;
+    private javax.swing.JTextField txta;
+    private javax.swing.JTextField txtb;
+    private javax.swing.JTextField txtc;
     // End of variables declaration//GEN-END:variables
 }

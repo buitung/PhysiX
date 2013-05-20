@@ -30,68 +30,68 @@ public class Sphere extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        lblWelcome = new javax.swing.JLabel();
+        lblCopyright = new javax.swing.JLabel();
+        lblRadius = new javax.swing.JLabel();
+        txtRadius = new javax.swing.JTextField();
+        lblm = new javax.swing.JLabel();
+        lblSurArea = new javax.swing.JLabel();
+        lblVolume = new javax.swing.JLabel();
+        lblSqm = new javax.swing.JLabel();
+        lblCubem = new javax.swing.JLabel();
+        btnCal = new javax.swing.JButton();
+        btnInfo = new javax.swing.JButton();
+        lblAreaAns = new javax.swing.JLabel();
+        lblVolAns = new javax.swing.JLabel();
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setText("Welcome to PhysiX");
+        lblWelcome.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblWelcome.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblWelcome.setText("Welcome to PhysiX");
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Copyright IPEramus 2013");
+        lblCopyright.setFont(new java.awt.Font("DejaVu Sans", 2, 12)); // NOI18N
+        lblCopyright.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblCopyright.setText("Copyright IPEramus 2013");
 
-        jLabel3.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel3.setText("Radius");
+        lblRadius.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblRadius.setText("Radius");
 
-        jTextField1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jTextField1.setText("    ");
+        txtRadius.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        txtRadius.setText("    ");
 
-        jLabel4.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel4.setText("m");
+        lblm.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblm.setText("m");
 
-        jLabel5.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel5.setText("Surface Area");
+        lblSurArea.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblSurArea.setText("Surface Area");
 
-        jLabel6.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel6.setText("Volume");
+        lblVolume.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblVolume.setText("Volume");
 
-        jLabel9.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel9.setText("m^2");
+        lblSqm.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblSqm.setText("m^2");
 
-        jLabel10.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jLabel10.setText("m^3");
+        lblCubem.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblCubem.setText("m^3");
 
-        jButton1.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton1.setText("Calculate");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCal.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnCal.setText("Calculate");
+        btnCal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCalActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
-        jButton2.setText("Information");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnInfo.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        btnInfo.setText("Information");
+        btnInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnInfoActionPerformed(evt);
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblAreaAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
-        jLabel12.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
+        lblVolAns.setFont(new java.awt.Font("DejaVu Sans", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -101,82 +101,82 @@ public class Sphere extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(lblWelcome)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2))
+                        .addComponent(lblCopyright))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel3))
+                            .addComponent(lblVolume)
+                            .addComponent(lblSurArea)
+                            .addComponent(lblRadius))
                         .addGap(54, 54, 54)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 81, Short.MAX_VALUE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblVolAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtRadius, javax.swing.GroupLayout.DEFAULT_SIZE, 81, Short.MAX_VALUE)
+                            .addComponent(lblAreaAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel9))
+                            .addComponent(lblm)
+                            .addComponent(lblCubem)
+                            .addComponent(lblSqm))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(btnInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnCal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(10, 10, 10))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lblWelcome)
+                    .addComponent(lblCopyright))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblRadius)
+                    .addComponent(txtRadius, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblm)
+                    .addComponent(btnCal, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblAreaAns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel5)
-                                .addComponent(jLabel9)))
+                                .addComponent(lblSurArea)
+                                .addComponent(lblSqm)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblVolume)
+                            .addComponent(lblCubem)
+                            .addComponent(lblVolAns, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btnInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalActionPerformed
         // TODO add your handling code here:
         try {
-            PhysixLib.Sphere sph = new PhysixLib.Sphere(Float.parseFloat(jTextField1.getText().toString()));
-            if (Float.parseFloat(jTextField1.getText())<=0)
+            PhysixLib.Sphere sph = new PhysixLib.Sphere(Float.parseFloat(txtRadius.getText().toString()));
+            if (Float.parseFloat(txtRadius.getText())<=0)
                 throw new ArithmeticException();
-            jLabel11.setText(Float.toString(sph.Area()));
-            jLabel12.setText(Float.toString(sph.Volume()));
+            lblAreaAns.setText(Float.toString(sph.Area()));
+            lblVolAns.setText(Float.toString(sph.Volume()));
         } catch (ArithmeticException e) {
             JOptionPane.showMessageDialog(this, 
                     "Radius must be higher than zero.\n"
                     + "Please enter the radius again.");
-            jLabel11.setText("");
-            jLabel12.setText("");
+            lblAreaAns.setText("");
+            lblVolAns.setText("");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Please enter the radius in the right form");
-            jLabel11.setText("");
-            jLabel12.setText("");
+            lblAreaAns.setText("");
+            lblVolAns.setText("");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCalActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInfoActionPerformed
         // TODO add your handling code here:
         JFrame infoFr = new JFrame();
         infoFr.setContentPane(new SphereInformation());
@@ -184,20 +184,20 @@ public class Sphere extends javax.swing.JPanel {
         infoFr.setVisible(true);
         infoFr.setTitle("About Sphere");
         infoFr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnInfoActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton btnCal;
+    private javax.swing.JButton btnInfo;
+    private javax.swing.JLabel lblAreaAns;
+    private javax.swing.JLabel lblCopyright;
+    private javax.swing.JLabel lblCubem;
+    private javax.swing.JLabel lblRadius;
+    private javax.swing.JLabel lblSqm;
+    private javax.swing.JLabel lblSurArea;
+    private javax.swing.JLabel lblVolAns;
+    private javax.swing.JLabel lblVolume;
+    private javax.swing.JLabel lblWelcome;
+    private javax.swing.JLabel lblm;
+    private javax.swing.JTextField txtRadius;
     // End of variables declaration//GEN-END:variables
 }
