@@ -50,7 +50,7 @@ public class PyramidInformation extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1);
 
         jTextPane1.setEditable(false);
-        jTextPane1.setText("Pyramid is a structure whose shape is roughly that of a pyramid in the geometric sense. Its outer surfaces are triangular and converge to a single point at the top. The base of the pyramid described here is trilateral.\nA pyramid of three base sides: a, b and c, and the height of the pyramid h. \n\nLet s the half perimeter \n\ts = (a+b+c)/2.\nInradius of base is ir:\n\tir = SqrRoot( (s-a)*(s-b)*(s-c)/s )\nThe length of the side heigth is\n\tsh = SqrRoot(h^2 + ir^2) \nThe surface area of the pyramid is\n\tSurArea = baseArea + sidePerimeter*sh*0,5 \nThe  volume of the pyramid is\n\tv =  baseArea * h / 2\n");
+        jTextPane1.setText("Pyramid is a structure whose shape is roughly that of a pyramid in the geometric sense. Its outer surfaces are triangular and converge to a single point at the top. The base of the pyramid described here is trilateral.\nA pyramid of three base sides: a, b and c, and the height of the pyramid h. \n\nLet s the half perimeter \n\ts = (a+b+c)/2.\nInradius of base is ir:\n\tir = SqrRoot( (s-a)*(s-b)*(s-c)/s )\nThe length of the side heigth is\n\tsh = SqrRoot(h^2 + ir^2) \nThe surface area of the pyramid is\n\tSurArea = baseArea + sidePerimeter*sh*0,5 \nThe  volume of the pyramid is\n\tv =  baseArea * h / 3\n");
         jScrollPane3.setViewportView(jTextPane1);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

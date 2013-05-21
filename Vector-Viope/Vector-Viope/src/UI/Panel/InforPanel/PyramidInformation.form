@@ -101,7 +101,7 @@
                 <Component class="javax.swing.JTextPane" name="jTextPane1">
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
-                    <Property name="text" type="java.lang.String" value="Pyramid is a structure whose shape is roughly that of a pyramid in the geometric sense. Its outer surfaces are triangular and converge to a single point at the top. The base of the pyramid described here is trilateral.&#xa;A pyramid of three base sides: a, b and c, and the height of the pyramid h. &#xa;&#xa;Let s the half perimeter &#xa;&#x9;s = (a+b+c)/2.&#xa;Inradius of base is ir:&#xa;&#x9;ir = SqrRoot( (s-a)*(s-b)*(s-c)/s )&#xa;The length of the side heigth is&#xa;&#x9;sh = SqrRoot(h^2 + ir^2) &#xa;The surface area of the pyramid is&#xa;&#x9;SurArea = baseArea + sidePerimeter*sh*0,5 &#xa;The  volume of the pyramid is&#xa;&#x9;v =  baseArea * h / 2&#xa;"/>
+                    <Property name="text" type="java.lang.String" value="Pyramid is a structure whose shape is roughly that of a pyramid in the geometric sense. Its outer surfaces are triangular and converge to a single point at the top. The base of the pyramid described here is trilateral.&#xa;A pyramid of three base sides: a, b and c, and the height of the pyramid h. &#xa;&#xa;Let s the half perimeter &#xa;&#x9;s = (a+b+c)/2.&#xa;Inradius of base is ir:&#xa;&#x9;ir = SqrRoot( (s-a)*(s-b)*(s-c)/s )&#xa;The length of the side heigth is&#xa;&#x9;sh = SqrRoot(h^2 + ir^2) &#xa;The surface area of the pyramid is&#xa;&#x9;SurArea = baseArea + sidePerimeter*sh*0,5 &#xa;The  volume of the pyramid is&#xa;&#x9;v =  baseArea * h / 3&#xa;"/>
                   </Properties>
                 </Component>
               </SubComponents>

@@ -37,7 +37,7 @@ public class Triangle {
      * @return the float value of the area of the triangle
      */
     public float Area(){
-        float p = Perimeter();
+        float p = Perimeter()/2;
         return (float)Math.sqrt(p*(p-a)*(p-b)*(p-c));
     }
 }
